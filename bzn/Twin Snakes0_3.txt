@@ -1,0 +1,84 @@
+	// Map Definitions
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1274
+	Handle trigger_1274
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1273
+	Handle trigger_1273
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1270
+	Handle trigger_1270
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1269
+	Handle trigger_1269
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1234
+	Handle trigger_1234
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1122
+	Handle trigger_1122
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1121
+	Handle trigger_1121
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1103
+	Handle trigger_1103
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1058
+	Handle trigger_1058
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1057
+	Handle trigger_1057
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1056
+	Handle trigger_1056
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1013
+	Handle trigger_1013
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1012
+	Handle trigger_1012
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1011
+	Handle trigger_1011
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1123
+	Handle trigger_1123
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1124
+	Handle trigger_1124
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1274 = GetHandle( "trigger_1274" );
+	trigger_1273 = GetHandle( "trigger_1273" );
+	trigger_1270 = GetHandle( "trigger_1270" );
+	trigger_1269 = GetHandle( "trigger_1269" );
+	trigger_1234 = GetHandle( "trigger_1234" );
+	trigger_1122 = GetHandle( "trigger_1122" );
+	trigger_1121 = GetHandle( "trigger_1121" );
+	trigger_1103 = GetHandle( "trigger_1103" );
+	trigger_1058 = GetHandle( "trigger_1058" );
+	trigger_1057 = GetHandle( "trigger_1057" );
+	trigger_1056 = GetHandle( "trigger_1056" );
+	trigger_1013 = GetHandle( "trigger_1013" );
+	trigger_1012 = GetHandle( "trigger_1012" );
+	trigger_1011 = GetHandle( "trigger_1011" );
+	trigger_1123 = GetHandle( "trigger_1123" );
+	trigger_1124 = GetHandle( "trigger_1124" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (1 points)

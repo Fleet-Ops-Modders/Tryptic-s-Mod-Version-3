@@ -1,0 +1,201 @@
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 0;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+	//Startup
+	"kli_chorZ",					 1,0, -1,  1,
+	"kli_topmeyZ",					 1,0, -1,  0,
+	"kli_chorZ",					 1,0, -1,  0,
+	"kli_field_yardZ",				 1,0, -1,  0,
+	"kli_mining_stationZ",			 1,1, -1,  0,
+	"kli_mining_stationZ",			 1,2, -1,  0,
+	"kli_topmeyZ",					 1,0, -1,  0,
+
+	//Ship Build 1-1
+	"kli_brelZ",					 1,0, -1,  -1,
+	"kli_kbeajqZ",					 1,0, 4,  -2,
+	"kli_topmeyZ",					 2,0, -1,  0,
+	"kli_field_researchZ",			 1,0, -1,  0,
+	"kli_brelZ",					 1,0, 2,  -1,
+	"kli_kbeajqZ",					 1,0, -1,  0,
+	"kli_topmeyZ",					 2,0, -1,  0,
+
+	//Tech-up 1-1
+	"kliR_fatigue",					 1,0, -1,  0,
+	"kli_qawdujS",					 1,0, 1,  -1,
+	"kli_brelZ",					 1,0, 1,  -1,
+	"kli_scout_stationZ",			 1,1, -1,  0,
+	"kli_scout_stationZ",			 1,2, -1,  0,
+	"kli_kbeajqZ",					 1,0, 2,  -1,
+	"kli_susaA",					 1,0, 3,  -1,
+	"kli_kvortZ",					 1,0, -1,  0,
+	"kliR_heavy_disruptor",			 1,0, -1,  0,
+	"kli_susaA",					 1,0, 3,  -1,
+	"kli_kvortZ",					 1,0, -1,  0,
+	"kli_noqduj",					 1,0, -1,  0,
+	"kliR_sbtorp",					 1,0, -1,  0,
+	"kli_battle_yardZ",				 1,3, -1,  2,
+	
+	//Ship Build 1-2
+	"kli_kbeajqZ",					 1,0, 2,  -2,
+	"kli_veqlaragh",				 1,0, -1,  0,
+	"kli_mining_stationZ",			 1,3, -1,  0,
+	"kli_kvortZ",					 1,0, -1,  -3,
+	"kli_sangZ",					 1,2, -1,  -3,
+	"kli_kbeajqZ",					 1,0, -1,  -2,
+	"kli_veqlaragh",				 1,0, -1,  0,
+	"kli_kvortZ",					 1,0, -1,  -3,
+	"kli_sangZ",					 1,2, -1,  -3,
+	"kli_noqduj",					 1,0, -1,  0,
+
+	//Tech-up 1-2
+	"kli_veqlaragh",				 1,0, 2,  -2,
+	"kli_sangZ",					 1,2, -1,  -3,
+
+
+	//Ship Build 2-1
+	"kli_battle_yardZ",				 1,0, -1,  0,
+	"kli_kbeajqZ",					 1,0, -1,  -2,
+	"kli_chargh",					 2,2, -1,  -2,
+	"kli_sangZ",					 2,2, 2,  -1,
+	"kli_qawduj",					 2,2, -1,  0,
+
+	//Tech Level 3
+	"kli_armoryZ",					 1,0, -1,  3,
+	"kli_platformZ",				 1,3, -1,  0,
+	"kli_battle_yardZ",				 1,0, -1,  0,
+	"kliU_weapons1",				 1,0, -1,  0,
+	"kli_mixedtech_yard_borA",		 1,0, -1,  0,
+	"kli_vorchaZ",					 2,2, -1,  -3,
+	"kli_edjen",					 1,0, -1,  0,
+	"kliR_compound",				 1,0, -1,  0,
+	"kli_vorchaZ",					 2,2, 2,  0,
+	"kliR_disrupt",					 1,0, -1,  0,
+	"kli_vorchaZ",					 2,2, 2,  0,
+	"kli_kvort_fed",				 1,0, -1,  -3,
+	"kliR_qawduj1",					 1,0, -1,  0,
+
+	//Tech-up 3-1
+	"kli_ordnance_depotZ",			 1,0, -1,  0,
+	"kliR_qawduj2",					 1,0, -1,  0,
+	"kliU_shields1",				 1,0, -1,  0,
+	"kli_vutpaZ",					 2,2, 3,  0,
+	"kliR_polaron",					 1,0, -1,  0,
+	"kli_luspetA",					 2,2, -1,  0,
+	"kli_vutpaZ",					 2,2, -1,  0,
+	"kliR_missilestorm",			 1,0, -1,  0,
+
+	//Ship Build 3-1
+	"kli_imperial_yardZ",			 2,0, -1,  0,
+	"kli_edjen",					 1,0, -1,  0,
+	"kli_chonaq",					 2,0, -1,  0,
+	"kliU_engines1",				 1,0, -1,  0,
+	"kli_chonaq",					 2,0, 2,  -3,
+	"kli_chonaq",					 2,0, 2,  -3,
+
+	
+	//Expansion 2-1
+	"kli_mining_stationZ",			 1,4, -1,  0,
+	"kli_platformZ",				 1,4, -1,  0,
+	"kli_battle_yardZ",				 1,4, -1,  0,
+	"kli_topmeyZ",					 2,0, -1,  0,
+	"kli_platformZ",				 1,3, -1,  0,
+
+	//Tech Level 4
+	"kli_imperial_researchZ",		 1,0, -1,  4,
+	"kliU_weapons2",				 1,0, -1,  0,
+	"kliU_engines2",				 1,0, -1,  0,
+	"kli_neghvarZ",					 2,0, -1,  0,
+	"kliR_energybuffer",			 1,0, -1,  0,
+	"kliR_largescalecloak",			 1,0, -1,  0,
+	"kli_neghvarZ",					 2,0, -1,  0,
+	"kliR_overload",				 1,0, -1,  0,
+	"kliR_gravseekmissile",			 1,0, -1,  0,
+
+	//Ship Build 4-1
+	"kli_neghvarZ",					 2,0, -1,  0,
+	"kli_vorchaZ",					 3,0, -1,  0,
+	"kli_bortasZ",					 2,0, -1,  0,
+	"kli_vutpaR",					 3,0, -1,  0,
+	"kli_chonaq",					 2,0, -1,  0,
+	"kli_imperial_yardZ",			 1,0, -1,  0,
+
+	//Expansion 4-1
+	"kli_mining_stationZ",			 1,5, -1,  0,
+	"kli_battle_yardZ",				 1,5, -1,  0,
+	"kli_topmeyZ",					 4,0, -1,  0,
+	"kli_platformZ",				 2,6, -1,  0,
+	"kli_imperial_yardZ",			 1,6, -1,  0,
+	"kli_mining_stationZ",			 1,6, -1,  0,
+	"kliU_shields2",				 1,0, -1,  0,
+
+	//Final Military Phase 1
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_vorchaZ",				 2,0, -1,  0,
+	"kli_qawdujS",				 1,0, -1,  0,
+	"kli_kvortZ",				 1,0, -1,  0,
+	"kli_kbeajqZ",				 1,0, -1,  0,
+	"kli_veqlaragh",			 1,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_vutpaZ",				 2,0, -1,  0,
+	"kli_neghvarZ",				 6,0, -1,  0,
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_sangZ",				 2,0, -1,  0,
+	"kli_qawduj",				 1,0, -1,  0,
+	"kli_chargh",				 2,0, -1,  0,
+	"kli_luspetA",				 2,0, -1,  0,
+
+	//Final Military Phase 2
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_vorchaZ",				 2,0, -1,  0,
+	"kli_qawdujS",				 1,0, -1,  0,
+	"kli_kvortZ",				 1,0, -1,  0,
+	"kli_kbeajqZ",				 1,0, -1,  0,
+	"kli_veqlaragh",			 1,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_vutpaZ",				 2,0, -1,  0,
+	"kli_neghvarZ",				 6,0, -1,  0,
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_sangZ",				 2,0, -1,  0,
+	"kli_qawduj",				 1,0, -1,  0,
+	"kli_chargh",				 2,0, -1,  0,
+	"kli_luspetA",				 2,0, -1,  0,
+
+	//Final Military Phase 3
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_vorchaZ",				 2,0, -1,  0,
+	"kli_qawdujS",				 1,0, -1,  0,
+	"kli_kvortZ",				 1,0, -1,  0,
+	"kli_kbeajqZ",				 1,0, -1,  0,
+	"kli_veqlaragh",			 1,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_vutpaZ",				 2,0, -1,  0,
+	"kli_neghvarZ",				 6,0, -1,  0,
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_sangZ",				 2,0, -1,  0,
+	"kli_qawduj",				 1,0, -1,  0,
+	"kli_chargh",				 2,0, -1,  0,
+	"kli_luspetA",				 2,0, -1,  0,
+
+	//Final Military Phase 4
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_vorchaZ",				 2,0, -1,  0,
+	"kli_qawdujS",				 1,0, -1,  0,
+	"kli_kvortZ",				 1,0, -1,  0,
+	"kli_kbeajqZ",				 1,0, -1,  0,
+	"kli_veqlaragh",			 1,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_vutpaZ",				 2,0, -1,  0,
+	"kli_neghvarZ",				 6,0, -1,  0,
+	"kli_neghvarZ",				 3,0, -1,  0,
+	"kli_chonaq",				 1,0, -1,  0,
+	"kli_sangZ",				 2,0, -1,  0,
+	"kli_qawduj",				 1,0, -1,  0,
+	"kli_chargh",				 2,0, -1,  0,
+	"kli_luspetA",				 2,0, -1,  0,
+}; 

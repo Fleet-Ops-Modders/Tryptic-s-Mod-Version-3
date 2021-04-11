@@ -1,0 +1,70 @@
+	// Map Definitions
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1287
+	Handle trigger_1287
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1286
+	Handle trigger_1286
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1040
+	Handle trigger_1040
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1041
+	Handle trigger_1041
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1042
+	Handle trigger_1042
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1043
+	Handle trigger_1043
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1044
+	Handle trigger_1044
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1045
+	Handle trigger_1045
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1047
+	Handle trigger_1047
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1051
+	Handle trigger_1051
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1052
+	Handle trigger_1052
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1053
+	Handle trigger_1053
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1287 = GetHandle( "trigger_1287" );
+	trigger_1286 = GetHandle( "trigger_1286" );
+	trigger_1040 = GetHandle( "trigger_1040" );
+	trigger_1041 = GetHandle( "trigger_1041" );
+	trigger_1042 = GetHandle( "trigger_1042" );
+	trigger_1043 = GetHandle( "trigger_1043" );
+	trigger_1044 = GetHandle( "trigger_1044" );
+	trigger_1045 = GetHandle( "trigger_1045" );
+	trigger_1047 = GetHandle( "trigger_1047" );
+	trigger_1051 = GetHandle( "trigger_1051" );
+	trigger_1052 = GetHandle( "trigger_1052" );
+	trigger_1053 = GetHandle( "trigger_1053" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_2" (2 points)
+	// Path: "Camera_1" (2 points)
+	// Path: "path_1" (2 points)
+	// Path: "path_2" (2 points)

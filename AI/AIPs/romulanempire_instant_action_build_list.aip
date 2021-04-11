@@ -1,0 +1,182 @@
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 0;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+	//Startup
+	"rom_mogaiZ",					 1,0, -1,  1,
+	"rom_fakairu",					 1,0, -1,  0,
+	"rom_mogaiZ",					 1,0, -1,  1,
+	"rom_staryardZ",				 1,0, -1,  0,
+	"rom_mining_colony",			 1,1, -1,  0,
+	"rom_mining_colony",			 1,2, -1,  0,
+	"rom_fakairu",					 1,0, -1,  0,
+	"rom_rhienn",					 1,0, 2,  -1,
+	"rom_staryardZ",				 1,3, -1,  0,
+	"rom_mining_colony",			 1,3, -1,  0,
+	"rom_rhienn",					 2,0, -1,  -1,
+	"rom_fakairu",					 2,0, -1,  0,
+	"rom_research_instituteZ",		 1,0, -1,  0,
+
+	//Base Vessels
+	"rom_shrike",					 2,0, -1,  -3,
+	"rom_fakairu",					 2,0, -1,  0,
+	"romR_phaseplates",				 1,0, -1,  0,
+	"rom_rhienn",					 2,0, -1,  -2,
+	"romR_leahval1",				 1,0, -1,  0,
+	"rom_warbird_yardZ",			 1,1, -1,  0,
+	"rom_generix",					 2,0, -1,  -1,
+
+	//Techphase 1
+	"rom_disruptor_turretZ",		 2,3, -1,  0,
+	"rom_singularitytransZ",		 1,3, -1,  0,
+	"romR_arlterium",				 1,0, -1,  0,
+	"rom_talon",					 1,0, -1,  0,
+
+	//Military Phase 1
+	"rom_cehlaer",					 1,2, -1,  -3,
+	"rom_leahvalZ",					 3,0, -1,  -2,
+	"romR_leahval2",				 1,0, -1,  2,
+	"rom_griffinA",					 3,0, -1,  -2,
+	"rom_cehlaer",					 1,2, -1,  0,
+
+	//Techphase 2a
+	"rom_upgrade_facilityZ",		 1,0, -1,  0,
+	"rom_mixedtech_yard_borA",		 1,0, -1,  0,
+	"rom_dderidexZ",				 1,0, 1,  0,
+	"rom_saeihr",					 1,0, -1,  0,
+	"romU_shields1",				 1,0, -1,  3,
+	"rom_saeihr",					 1,0, -1,  0,
+	"romR_singularityimp",			 1,0, -1,  0,
+	"rom_rhienn_phaser",			 2,0, 2,  -3,
+	"rom_generix_sin",				 2,0, 2,  -3,
+	"rom_dderidexZ",				 1,0, -1,  0,
+	"rom_talshiar_academyZ",		 1,0, -1,  0,
+	"romR_harmonicimpl",			 1,0, -1,  0,
+	"romR_bombardment",				 1,0, -1,  0,
+	"rom_generix_sin",				 3,0, -1,  0,
+	"rom_dderidexZ",				 1,2, -1,  0,
+	"rom_generix_spc",				 3,0, -1,  0,
+	"rom_rhienn_torpedo",			 3,0, -1,  0,
+	"romU_weapons1",				 1,0, -1,  0,
+	"romR_unstable",				 1,0, -1,  0,
+	"rom_staryardZ",				 1,0, -1,  0,
+	"rom_warbird_yardZ",			 1,1, -1,  0,
+	"rom_eresisA",					 2,2, -1,  0,
+	"rom_rhienn_phaser",			 2,0, -1,  0,
+	"rom_norexanZ",					 2,0, -1,  0,
+	"romR_stealth",					 1,0, -1,  0,
+	"romU_sensors1",				 1,0, -1,  0,
+	"rom_cloaking_generator",		 1,0, -1,  0,
+	"rom_warbird_yardZ",			 1,0, -1,  0,
+	"rom_mogaiZ",					 1,0, -1,  0,
+	"romR_multi_targeting",			 1,0, -1,  0,
+	"romR_vector",					 1,0, -1,  0,
+	"romR_refractive",				 1,0, -1,  4,
+	"romU_weapons2",				 1,0, -1,  0,
+	
+	//Military Phase 2a
+	"rom_serkasZ",					 2,0, -1,  0,
+	"kli_qawduj_rom",				 2,0, -1,  0,
+	"rom_norexanZ",					 3,0, -1,  0,
+//	"rom_tavaraZ_DC",				 1,0, -1,  0,
+
+	//Expansion 1
+	"rom_mining_colony",			 1,5, -1,  0,
+	"rom_singularitytransZ",		 1,5, -1,  0,
+	"rom_disruptor_turretZ",		 3,5, -1,  0,
+	"rom_staryardZ",				 1,5, -1,  0,
+	"romR_plasmamine",				 1,0, -1,  0,
+	"rom_fakairu",					 2,0, -1,  0,
+	"kli_qawduj_rom",				 1,0, -1,  0,
+	"romR_silentresolve",			 1,0, -1,  0,
+	"rom_intelligen_centerZ",		 1,0, -1,  0,
+	"romU_shields2",				 1,0, -1,  0,
+	"romR_multipurpose",			 1,0, -1,  0,
+	"rom_warbird_yardZ",			 1,0, -1,  0,
+	"rom_tavaraZ_WDr3",				 1,0, -1,  0,
+	
+	//Military Phase
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_norexanZMr3",				 2,0, -1,  0,
+	"rom_generix_sin",				 2,0, -1,  0,
+	"rom_norexanZ",					 2,0, -1,  0,
+	"rom_eresisA",					 1,0, -1,  0,
+	"rom_cehlaer",					 1,0, -1,  0,
+
+	//Military Phase 3
+	"rom_rhienn_phaser",			 3,0, -1,  0,
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_rhienn_torpedo",			 3,0, -1,  0,
+	"rom_norexanZMr3",				 4,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_eresisA",					 1,0, -1,  0,
+
+	//Expansion 2
+	"romU_sensors2",				 1,0, -1,  0,
+	"rom_mining_colony",			 1,7, -1,  0,
+	"rom_staryardZ",				 1,7, -1,  0,
+	"rom_fakairu",					 4,0, -1,  0,
+	"rom_starbaseZ_DDWW",			 1,7, -1,  0,
+	"rom_singularitytransZ",		 1,7, -1,  0,
+	"rom_disruptor_turretZ",		 4,7, -1,  0,
+	"rom_warbird_yardZ",			 1,7, -1,  0,
+	"rom_mining_colony",			 1,8, -1,  0,
+	"rom_singularitytransZ",		 1,8, -1,  0,
+	"rom_disruptor_turretZ",		 4,8, -1,  0,
+
+	//Final Military Phase 1
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_norexanZ",					 4,0, -1,  0,
+	"rom_generix_sin",				 4,0, -1,  0,
+	"rom_cehlaer",					 2,0, -1,  0,
+	"rom_rhienn_phaser",			 2,0, -1,  0,
+	"rom_norexanZMr3",				 2,0, -1,  0,
+	"rom_rhienn_torpedo",			 2,0, -1,  0,
+	"rom_serkasZ",					 2,0, -1,  0,
+	"rom_eresisA",					 2,0, -1,  0,
+	"rom_griffinA",					 2,0, -1,  0,
+
+	//Final Military Phase 2
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_norexanZ",					 4,0, -1,  0,
+	"rom_generix_sin",				 4,0, -1,  0,
+	"rom_cehlaer",					 2,0, -1,  0,
+	"rom_rhienn_phaser",			 2,0, -1,  0,
+	"rom_norexanZMr3",				 2,0, -1,  0,
+	"rom_rhienn_torpedo",			 2,0, -1,  0,
+	"rom_serkasZ",					 2,0, -1,  0,
+	"rom_eresisA",					 2,0, -1,  0,
+	"rom_griffinA",					 2,0, -1,  0,
+
+	//Final Military Phase 3
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_norexanZ",					 4,0, -1,  0,
+	"rom_generix_sin",				 4,0, -1,  0,
+	"rom_cehlaer",					 2,0, -1,  0,
+	"rom_rhienn_phaser",			 2,0, -1,  0,
+	"rom_norexanZMr3",				 2,0, -1,  0,
+	"rom_rhienn_torpedo",			 2,0, -1,  0,
+	"rom_serkasZ",					 2,0, -1,  0,
+	"rom_eresisA",					 2,0, -1,  0,
+	"rom_griffinA",					 2,0, -1,  0,
+
+	//Final Military Phase 4
+	"rom_dderidexZ",				 2,0, -1,  0,
+	"rom_generix_spc",				 2,0, -1,  0,
+	"rom_norexanZ",					 4,0, -1,  0,
+	"rom_generix_sin",				 4,0, -1,  0,
+	"rom_cehlaer",					 2,0, -1,  0,
+	"rom_rhienn_phaser",			 2,0, -1,  0,
+	"rom_norexanZMr3",				 2,0, -1,  0,
+	"rom_rhienn_torpedo",			 2,0, -1,  0,
+	"rom_serkasZ",					 2,0, -1,  0,
+	"rom_eresisA",					 2,0, -1,  0,
+	"rom_griffinA",					 2,0, -1,  0,
+}; 
+

@@ -1,0 +1,109 @@
+	// Map Definitions
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1555
+	Handle trigger_1555
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1437
+	Handle trigger_1437
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1436
+	Handle trigger_1436
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1435
+	Handle trigger_1435
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1434
+	Handle trigger_1434
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1429
+	Handle trigger_1429
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1428
+	Handle trigger_1428
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1389
+	Handle trigger_1389
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1390
+	Handle trigger_1390
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1391
+	Handle trigger_1391
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1392
+	Handle trigger_1392
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1393
+	Handle trigger_1393
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1394
+	Handle trigger_1394
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1540
+	Handle trigger_1540
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1541
+	Handle trigger_1541
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1542
+	Handle trigger_1542
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1543
+	Handle trigger_1543
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1544
+	Handle trigger_1544
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1547
+	Handle trigger_1547
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1548
+	Handle trigger_1548
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1549
+	Handle trigger_1549
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1550
+	Handle trigger_1550
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1555 = GetHandle( "trigger_1555" );
+	trigger_1437 = GetHandle( "trigger_1437" );
+	trigger_1436 = GetHandle( "trigger_1436" );
+	trigger_1435 = GetHandle( "trigger_1435" );
+	trigger_1434 = GetHandle( "trigger_1434" );
+	trigger_1429 = GetHandle( "trigger_1429" );
+	trigger_1428 = GetHandle( "trigger_1428" );
+	trigger_1389 = GetHandle( "trigger_1389" );
+	trigger_1390 = GetHandle( "trigger_1390" );
+	trigger_1391 = GetHandle( "trigger_1391" );
+	trigger_1392 = GetHandle( "trigger_1392" );
+	trigger_1393 = GetHandle( "trigger_1393" );
+	trigger_1394 = GetHandle( "trigger_1394" );
+	trigger_1540 = GetHandle( "trigger_1540" );
+	trigger_1541 = GetHandle( "trigger_1541" );
+	trigger_1542 = GetHandle( "trigger_1542" );
+	trigger_1543 = GetHandle( "trigger_1543" );
+	trigger_1544 = GetHandle( "trigger_1544" );
+	trigger_1547 = GetHandle( "trigger_1547" );
+	trigger_1548 = GetHandle( "trigger_1548" );
+	trigger_1549 = GetHandle( "trigger_1549" );
+	trigger_1550 = GetHandle( "trigger_1550" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (2 points)
+	// Path: "Camera_3" (2 points)

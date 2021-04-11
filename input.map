@@ -1,0 +1,6704 @@
+##########################################
+#
+# STAR TREK Input Map
+#
+# Modify these to update the keyboard and
+# mouse configuration.
+#
+##########################################
+
+####################
+# Key Descriptions #
+####################
+
+# Control Key
+control {
+	+ keyboard	Control
+}
+# Shift Key
+shift {
+	+ keyboard	Shift
+}
+# Alt Key
+alt {
+	+ keyboard	Alt
+}
+
+
+# Cursor movement.
+cursor_x {
+	+ mouse	HorizPos
+}
+cursor_y {
+	+ mouse	VertPos
+}
+cursor_dx {
+	+ mouse HorizVel
+}
+cursor_dy {
+	+ mouse VertVel
+}
+
+
+# Mouse button click, double click, and drag.
+left_click {
+	+ mouse	LeftBtn
+}
+left_hold {
+	+ mouse	LeftBtn
+}
+left_double_click {
+	+ mouse	LeftBtnDblClk
+}
+left_double_hold {
+	+ mouse	LeftBtnDblClk
+}
+middle_click {
+	+ mouse	MiddleBtn
+}
+middle_hold {
+	+ mouse	MiddleBtn
+}
+middle_double_click {
+	+ mouse	MiddleBtnDblClk
+}
+middle_double_hold {
+	+ mouse	MiddleBtnDblClk
+}
+right_click {
+	+ mouse	RightBtn
+}
+right_hold {
+	+ mouse	RightBtn
+}
+right_double_click {
+	+ mouse	RightBtnDblClk
+}
+right_double_hold {
+	+ mouse	RightBtnDblClk
+}
+
+
+# Chat Key (enter in-game chat)
+chat {
+	+ keyboard	Enter
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#Okay key, like hitting the okay button on popups
+okay {
+	+ keyboard	Enter
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Skips cutscene
+cineractiveCancel {
+	+ keyboard	Space
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########
+# Saving #
+##########
+
+# mark replay recording chapter
+chapter_save {
+	+ keyboard	R
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# multiplayer save
+multiplayer_save {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# regular save
+save_game {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Place flag visible to allies
+multiplayer_flag {
+	+ keyboard	F
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+######################
+# Interface Elements #
+######################
+# Toggle fog of war
+tactical_shroud_toggle {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Grid toggle
+grid_toggle {
+	+ keyboard	G
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Objectives Dialog
+objectives_toggle {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Interface toggle
+toggle_interface {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+#####################
+# Camera navigation #
+#####################
+
+### Rotate camera
+# Rotate camera clockwise (in Cinematic View Mode)
+camera_rotate_minus {
+	+ keyboard	GreyLeftArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Rotate camera counter-clockwise (in Cinematic View Mode)
+camera_rotate_plus {
+	+ keyboard	GreyRightArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Zoom camera
+# Zoom camera in
+zoom_factor_plus {
+	+ keyboard	GreyUpArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Zoom camera out
+zoom_factor_minus {
+	+ keyboard	GreyDownArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Reset zoom
+zoom_factor_reset {
+	+ keyboard	GreyEnd
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Pan (scroll) camera
+# Pan (scroll) camera right
+scroll_right {
+	+ keyboard	GreyRightArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera left
+scroll_left {
+	+ keyboard	GreyLeftArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera up
+scroll_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera down
+scroll_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### View mode
+# Toggle in or out of "tactical" (immersive, ship-level) view
+toggle_tactical {
+	+ keyboard	CAPSLock
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Reset the view for the current camera
+reset_view {
+	+ keyboard	V
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+## Camera angles
+# Switch camera angle in cinematic ("Tactical") view
+# Also switch to position of last event message?
+switch_camera_shot {
+	+ keyboard  Space
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Recenter camera on mission start
+center_player {
+	+ keyboard	GreyHome
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+# Keypad enter key
+hitKeypadEnter {
+	+ keyboard KeypadEnter
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+
+# Take screenshot
+snapshot {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+#############
+# Selection #
+#############
+
+# select all shortcut
+select_all {
+	+ keyboard	A
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next visible ship shortcut
+select_next_ship {
+	+ keyboard	LeftBracket
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next idle combat ship shortcut
+select_next_combat_ship {
+	+ keyboard	RightBracket
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next idle non-combat ship shortcut
+select_next_non_combat_ship {
+	+ keyboard	Comma
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# select next idle construction unit
+select_next_construction_ship {
+	+ keyboard	Period
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# select next trade station
+select_next_trade_station {
+	+ keyboard	Slash
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Put the focus on the next selected ship
+focus_next_selected {
+	+ keyboard	BackSlash
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Command grouping (create each group by holding ctrl and the given key)
+group_select_0 {
+	+ keyboard	Zero
+}
+group_select_1 {
+	+ keyboard	One
+}
+group_select_2 {
+	+ keyboard	Two
+}
+group_select_3 {
+	+ keyboard	Three
+}
+group_select_4 {
+	+ keyboard	Four
+}
+group_select_5 {
+	+ keyboard	Five
+}
+group_select_6 {
+	+ keyboard	Six
+}
+group_select_7 {
+	+ keyboard	Seven
+}
+group_select_8 {
+	+ keyboard	Eight
+}
+group_select_9 {
+	+ keyboard	Nine
+}
+group_deselect {
+	+ keyboard Minus
+	+ keyboard Control
+}
+other_group_deselect {
+	+ keyboard GreyMinus
+	+ keyboard Control
+}
+
+#############################
+# Button Bar Menu Shortcuts #
+#############################
+
+# Show the Button Palette (formerly Popup Palette, the floating version of the Button Bar)
+# Toggles, so if it's up already, turns it off.
+# if it's on some submenu palette, goes to normal.
+#toggle_popup {
+#	+ keyboard	X
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+### Show sub-menu shortcuts
+# These all toggle, if currently in
+# that menu, hides it if in popup or 
+# restores it to normal if in horizontal.
+
+# Show the orders menu
+#toggle_orders {
+#	+ keyboard	C
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+# Show the trade menu
+#toggle_trade {
+#	+ keyboard	V
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+# Show the build/evolve/research menu
+#toggle_build {
+#	+ keyboard	B
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#Show the AI menu token
+#toggle_AI {
+#	+ keyboard	N
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+# Show the Formations menu
+#toggle_formations {
+#	+ keyboard	F
+#	- keyboard	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+###########################################################
+# Action Menu Shortcuts (top level of Button Bar/Palette) #
+###########################################################
+
+# Recrew
+recrew {
+	+ keyboard	E
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Transport
+transport {
+	+ keyboard	T
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Comandeer
+capture {
+	+ keyboard	A
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set rally point
+rally {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Harvest (dilithium/latinum)
+#harvest {
+#	+ keyboard	H
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+# Colonize a planet
+#colonize {
+#	+ keyboard	GreyInsert
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+# Use Tractor Beam
+Tractor {
+	+ keyboard	T
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# Use Tractor Beam
+wc_npc_tractorbeam {
+	+ keyboard	T
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# Use Tractor Beam
+Tractor {
+	+ keyboard	T
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Use Tractor Beam
+wc_npc_tractorbeam {
+	+ keyboard	T
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Modifier key to enter a waypoint
+enter_waypoint {
+	+ keyboard	Shift
+}
+enter_waypoint {
+	+ keyboard	Tab
+}
+
+#######################################
+# Orders menu, corresponds to buttons #
+#######################################
+# Attack
+attack {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Stop
+stop {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+guard {
+	+ keyboard	G
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+patrol {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to repair mode
+repair {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+#Priority repair
+priorityRepair {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to explore mode (formerly scout mode)
+scout {
+	+ keyboard	E
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# Set search and destroy 
+searchAndDestroy {
+	+ keyboard	K
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Decommission
+decomm {
+	+ keyboard	GreyDelete
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+###########
+# AI menu #
+###########
+# Set to green alert
+green {
+	+ keyboard	Home
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to yellow alert
+yellow {
+	+ keyboard	UpArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to red alert
+red {
+	+ keyboard	PageUp
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to no movement autonomy
+move_low {
+	+ keyboard	LeftArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to medium movement autonomy
+move_med {
+	+ keyboard	Keypad5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to high movement autonomy
+move_high {
+	+ keyboard	RightArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to no special weapon autonomy
+special_weapon_autonomy_none {
+	+ keyboard	End
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to medium special weapon autonomy
+special_weapon_autonomy_med {
+	+ keyboard	DownArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to high special weapon automony
+special_weapon_autonomy_high {
+	+ keyboard	PageDown
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+##############
+# Trade menu #
+##############
+### Cargo Ship
+#start_trade {
+#	+ keyboard	V
+#	- keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+#end_trade {
+#	+ keyboard	V
+#	+ keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+#load_dilithium {
+#	+ keyboard	D
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#load_latinum {
+#	+ keyboard	L
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#load_metal {
+#	+ keyboard	M
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#load_crew {
+#	+ keyboard	O
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+### Trading Station
+#buy_dilithium {
+#	+ keyboard	D
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#buy_metal {
+#	+ keyboard	M
+#	- keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+#sell_dilithium {
+#	+ keyboard	D
+#	- keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+#sell_metal {
+#	+ keyboard	M
+#	- keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+ 
+# Recycler station
+#recycle_metal {
+#	+ keyboard	T
+#	- keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+
+#recycle_dilithium {
+#	+ keyboard	D
+#	- keyboard 	Control
+#	+ keyboard	Shift
+#	- keyboard	Alt
+#}
+
+##############
+# Build menu #
+##############
+### global keys
+### Cancel build/evolve/research
+cancel {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#############
+# Debugging #
+#############
+
+### Cursor
+
+# Detach/attach game mouse to windows mouse (for debugging purposes to allow game cursor to stay in place while moving Windows cursor in outside of Armada running in a window)
+mouse_toggle {
+	+ keyboard	Z
+	+ keyboard	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Rendering
+# Switch into/out of windowed mode
+toggle_fullscreen {
+	+ keyboard	Enter
+	- keyboard  Control
+	- keyboard	Shift
+	+ keyboard  Alt
+}
+# Toggle the fog and shroud on and off
+radar_toggle {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the object bounding sphere
+bounding_sphere {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of bounding boxes
+bounding_boxes {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of debugging info
+debugging_toggle {
+	+ keyboard	Y
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# timing of the single player or network game
+timing_toggle {
+	+ keyboard	T
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the quadtree
+quadtree_toggle {
+	+ keyboard	Q
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle showing memory information
+memory_toggle {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Object properties
+# Toggle team flags
+team_flag_toggle {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle VTune sampling
+vtune_toggle {
+	+ keyboard	Tab
+	+ keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Add dilithium
+debug_add_dilithium {
+	+ keyboard	Equal
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Subtract dilithium
+debug_sub_dilithium {
+	+ keyboard	Minus
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+#
+# Map Editor Keys
+#
+##########################################
+
+### Object placement
+mode_select_0 {
+	+ keyboard	F1
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_1 {
+	+ keyboard	F2
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_2 {
+	+ keyboard	F3
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_3 {
+	+ keyboard	F4
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_4 {
+	+ keyboard	F5
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_5 {
+	+ keyboard	F6
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_6 {
+	+ keyboard	F7
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_7 {
+	+ keyboard	F8
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_8 {
+	+ keyboard	F9
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_9 {
+	+ keyboard	F10
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_10 {
+	+ keyboard	F11
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_11 {
+	+ keyboard	F12
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Up one level in edit menu
+menu_back {
+	+ keyboard	Tab
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Object team selection
+# Cycle object's team back
+team_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# Cycle object's team forward
+team_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# AI debug team selection
+AI_team_up {
+	+ keyboard	GreyUpArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+AI_team_down {
+	+ keyboard	GreyDownArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Delete object or path point
+erase {
+	+ keyboard	GreyDelete
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+# Delete all pathpoints for a path in the editor
+deleteAllPathPoints {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Restore object to ODF settings.
+restore {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Restore ALL objects to ODF settings
+restoreAll {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Edit the map size and map parameters
+change_map {
+	+ keyboard	R
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Bring up the property dialog for an object
+object_dialog {
+	+ keyboard	P
+	- keyboard	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Make nebulae and map objects span map top to bottom
+topToBottom {
+	+ keyboard	GreyPlus
+	- keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Open the Dialog box which shows all game objects
+all_objects {
+	+ keyboard A
+	+ keyboard Control
+	+ keyboard Shift
+}
+
+# Open the obstacle avoidance dialog box
+#Why use Y? Because it's not used yet. :)
+avoidance_dialog {
+	+ keyboard	Y
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Save path to file
+save_3d_path {
+	+ keyboard  D
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Show AI debugging info
+AI_onscreen_display {
+	+ keyboard	A
+	- keyboard	I
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Turn on AI logging
+AI_logging_toggle {
+	+ keyboard	A
+	+ keyboard	I
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Standard edit commands
+# Cut a bunch of objects.
+cut {
+	+ keyboard	X
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Copy a bunch of objects.
+#copy {
+#	+ keyboard	C
+#	+ keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+# Paste a bunch of objects.
+paste {
+	+ keyboard	V
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# toggle nebula selecting in editor mode
+toggleNebulaSelect {
+	+ keyboard	N
+	+ keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+setFormationOrientation {
+	+ keyboard	F
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Game Control Keys
+toggleEditMode {
+	+ keyboard	E
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+saveMission {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#loadGame {
+#	+ keyboard	O
+#	+ keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+mainMenu {
+	+ keyboard	*Esc
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+pauseGame {
+	+ keyboard	Pause
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Take cleanshot
+cleanshot {
+	+ keyboard	P
+	+ keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+
+#########################################
+#########################################
+######  Fleet Operations Inputmaps  #####
+#########################################
+#########################################
+
+wc_npc_tractorbeam {
++ keyboard T
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran2 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran3 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran4 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran5 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran6 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran7 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran8 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran9 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran10 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran11 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_all_veteran23 {
++ keyboard V
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_all_technology_bor {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_technology_dom {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_technology_fed {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_technology_kli {
++ keyboard K
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_technology_rom {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Borg Regeneration###
+wc_bor_sphere_BBRR_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BRRH_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BRRR_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BRRT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_RRHT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_RRRH_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_RRRT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BBRR_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRRH_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRRR_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRRT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRHT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRRH_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRRT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRRS_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRHS_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRRS_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRSS_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRTS_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHH_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHN_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHT_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRTN_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Borg Holding Beam###
+
+wc_bor_adaptor_EO_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptor_OO_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptor_RO_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptor_TO_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BBBH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BBHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BBRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BRHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_BRRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_RRHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphere_RRRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_BHDD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_BRHD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_BRTH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_BTHD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_HDDD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_RHDD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_RTHD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamond_THDD_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BHHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BRHHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BRHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTHHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTRHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTRHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTRHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTRHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTRHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTTHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTTHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_BTTTRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_RHHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_THHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TRHHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TRHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTHHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTHHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTRHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTRHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTRHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTTHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTTHHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTTHMM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTTRHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cube_TTTRHM_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BBBH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BBHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BBRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRRH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BBHS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BHSS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BHTS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_BRHS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_HSSS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_HTSS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RHSS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RHTS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereY_RRHS_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_HHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_HHHN_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_HHHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_HHTN_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RHHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RHHN_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RHHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RHTN_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHH_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHN_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramid_RRHT_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_AAA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_BAA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_BRA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_BTA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_RAA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_TAA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_TRA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilator_TTA_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_BRZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_BTZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_BZN_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_BZZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_RZN_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_RZZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_TRZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_TTZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_TZN_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_TZZ_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZ_ZZN_ass {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Borg###
+
+bc_bor_assi_matrixY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_assi_matrixZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_uni_matrix {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_adap_matrix_dom {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_incubationUR {
++ keyboard U
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_col_matrix {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_uplinkY {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_uplinkY {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_uplinkY {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_uplinkZ {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_incubationY {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_incubationZ {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_recycling_center {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_resource_nodeR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_uplinkYR {
++ keyboard U
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_uplinkZR {
++ keyboard U
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+wc_bor_techtransfer {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_assemblerY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_assemblerY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_assemblerZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_freighter {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_freighterY {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_detector {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_interceptor {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_interceptorYT {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+wc_bor_scoutcubeYR {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_scoutcubeR {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_dodecaYR {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_dodecaR {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptorYR {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptorR {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorYR {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assimilatorZR {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereYR {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sphereR {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_pyramidR {
++ keyboard P
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamondYR {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_diamondR {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cubeYR {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_cubeR {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_bor_dodeca_relayIT {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_dodeca_relayRT {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_dodeca_relayVT {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_dodeca_relocate {
++ keyboard R
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borU_vinculumS {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_borU_vinculumM {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_borU_vinculumL {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borU_adaption1 {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_borU_adaption2 {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_borU_adaption3 {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_borU_adaption4 {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+wc_borS_refresh {
++ keyboard R
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_refresh2 {
++ keyboard R
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_sensor_relay {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_sensor_relay {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_sensor_relay_probe {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_sensor_relay_adv {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_baseholding {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_stations_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_relay_hol {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_slicer {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_probe {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_scube {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_dode {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_adap {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_assi {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_sphere {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_diamond {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_slicer_cube {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_devastating {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_devestating_probe {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_devastating_scube {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_devastating_adap {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_devestating_assi {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_devastating_sphere {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_devastating_diamond {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_devastating_cube {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_transwarp {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_transwarp_detector {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_transwarp_probe {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_transwarp_scube {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_logistics {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_freighterUR {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_datamining {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_sensor_scan {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_regeneration {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_freighter_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_detector_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_interceptor_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_scoutcube_reg_slow {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_scoutcube_reg_fast {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_dodeca_reg_slow {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_dodeca_reg_fast {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptor_reg_slow {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_adaptor_reg_fast {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_relay_reg {
++ keyboard R
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_nanites {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_nanites_cube {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_nanites_diamond {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_nanites_sphere {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_borR_board {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_probe {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_scube {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_dode {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_adap {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_assi {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_sphere {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_relay {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_pyramid {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_diamond {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_board_cube {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+wc_bor_assi_matrix_upgradeAY {
++ keyboard A
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgradeAZ {
++ keyboard A
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgradeFY {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgradeFZ {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgradeLY {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgradeLZ {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgrade4Y {
++ keyboard Q
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_assi_matrix_upgrade4Z {
++ keyboard Q
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_sensor_ping {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_neuraltransceiver {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_vinculum {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_emdome {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_axial {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_matrixteleport {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_nanitefactory {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_order_D {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_order_DD {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_borS_order_DDD {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_recycle_dilithium {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_bor_recycle_tritanium {
++ keyboard T
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Dominion###
+
+bc_dom_cloning_facY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_cloning_facZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_space_refineryY {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_space_refineryZ {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_ketracel_synthY {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_ketracel_synthZ {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_yardY {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_yardZ {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_technology_labY {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_technology_labZ {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_mixedtech_yard_bor {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_mixedtech_yard_borA {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_large_yardY {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_large_yardZ {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_ketracel_facY {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_ketracel_facZ {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_phaser_sentryY {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_phaser_sentryZ {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_sensorY {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_sensorZ {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_perimeterY {
++ keyboard F11
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_perimeterZ {
++ keyboard F11
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_supersensor {
++ keyboard F12
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_hyper_artilleryY {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_hyper_artilleryZ {
++ keyboard H
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Ships###
+
+bc_dom_worker_ship_bY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_bZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_mY {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_mZ {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_sY {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_sZ {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_scout {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_bY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_bZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_mY {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_mZ {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_sY {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_worker_ship_sZ {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_scout {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_dom_destroyer {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_bomberY {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_bomberZ {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_escort_cruiserY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_escort_cruiserZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_intercept_destY {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_intercept_dest {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_warfrigateY {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_warfrigateZ {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_destroyer_kli {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_nbre_cruiserD {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_dom_dreadnought_bor {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_escort_cruiser_bor {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_dreadnought_fed {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_siege_cruiser_fed {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_dreadnought_kli {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_bomber_kli {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_dreadnought_rom {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_intercept_dest_rom {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_dom_heavy_cruiser {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_heavy_cruiserZ {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_siege_cruiser {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_siege_cruiserZ {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_battle_cruiser_fed {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_battle_cruiserZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_battleshipY {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_battleshipZ {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_defender {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_dom_heavy_cruiser_r_rom {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_nbre_battleshipD {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Research###
+bc_domR_interception1 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_interception2 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_siege1 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_siege2 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_passiveprobe {r
++ keyboard P
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_tetphoton {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_emblast {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_isbomb {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_biowarheads {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_excessive {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_remotebeacon {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_cloak {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_coreblast {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domR_dampening {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+bc_domU_weapons1 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_weapons2 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_weapons1Z {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_weapons2Z {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_shields1 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_shields2 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_shields1Z {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_shields2Z {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_sensors1 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_sensors2 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_engines1 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_domU_engines2 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Abilities###
+
+wc_dom_cloning_fac_upgradeBY {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgradeBZ {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgradeF {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgradeKY {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgradeKZ {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgrade4Y {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_cloning_fac_upgrade4Z {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardY12R {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardZ12R {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardY13R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardZ13R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardY23R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_yardZ23R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardY12R {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardZ12R {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardY13R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardZ13R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardY23R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_large_yardZ23R {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+wc_dom_ketracel_synthesis {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_material_production {
++ keyboard M
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_destroyerR {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_heavy_cruiserR {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_remotebeacon {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_deepscan {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_work_to_mine {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_work_to_mineA {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_work_supply {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_work_supplyA {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_passiveprobe {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collision {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collisionr2 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collisionr3 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collisionr4 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collisionr5 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_collisionr6 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_tetrion_photon {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_alphawhite {
++ keyboard W
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_alphawhite_fed {
++ keyboard W
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_ebeacon {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_cascade {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_isbomb {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+#######################
+wc_domS_cloak_int {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+#######################
+wc_domS_biowarhead {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_phaseshield {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_emblast {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_escort_cruiser_reg {
++ keyboard R
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_domS_tetrion_disruptor {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_tetrion_disruptorr4 {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_tetrion_disruptorr5 {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_excessive {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_excessiver6 {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_coreblast {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_dampening {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_artillery {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_artilleryY {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_opresence {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_opresencer4 {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_opresencer5 {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_domS_tetrionsingularity {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+
+wc_dom_escort_cruiser_borR {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_siege_cruiser_fedR {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_bomber_kliR {
++ keyboard K
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_dom_intercept_dest_romR {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Federation###
+
+bc_fed_outpostY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_outpostZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_storage_dock {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_antares_yardY {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_antares_yardZ {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_engineeringY {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_engineeringZ {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_scienceY {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_scienceZ {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_mixedtech_yard_bor {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_mixedtech_yard_borA {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_commandY {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sf_commandZ {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_eraudi_yardY {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_eraudi_yardZ {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_platformY {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_platformZ {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+#######################
+
+bc_fed_mediterraneanY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_mediterraneanZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_mandril {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_venture {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_newtonY {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_newtonZ {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_fed_saberY {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_saberZ {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_monsoonY {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_monsoonZ {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_intrepidY {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_intrepidZ {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_akiraY {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_akiraZ {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_canaveralY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_canaveralZ {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_nova {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_mirandaii {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_avalon {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_remoore_bor {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_akira_dom {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_monsoon_kli {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_defiant_rom {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_fed_excelsioriiY {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_excelsioriiZ {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_remooreY {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_remoore {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_defiantY {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_defiant {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sovereignY {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_sovereign {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fed_phalanx {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Research###
+
+bc_fedR_adv_magnan {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_blockadebr {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_canaveral1 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_canaveral2 {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_critical {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_defpatterns {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_distortion {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_guidedquantums {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_impulse {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_nova1 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_nova2 {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_plasmacoil {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_progscan {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_proximity {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_remoore1 {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_remoore2 {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedR_tricobalt {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis1Y {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis1 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis2Y {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis2 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis3Y {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_chassis3 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_weapons1 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_weapons2 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_shields1 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_shields2 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_sensors1 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_fedU_sensors2 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+###Abilities###
+
+wc_fed_outpost_upgradePY {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgradePZ {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgradeIY {
++ keyboard I
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgradeIZ {
++ keyboard I
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgradeDY {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgradeDZ {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgrade4Y {
++ keyboard M
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_outpost_upgrade4Z {
++ keyboard M
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_industrial_replicators {
++ keyboard I
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_pulseR {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_pulseZR {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_phaserYR {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_phaserZR {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_torpedoYR {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_torpedoZR {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_sensorYR {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_platform_sensorZR {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_progscan {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_impulse {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_proximity {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_proximity_kli {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_tricobalt {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_stratsensor {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_stratsensorA {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_plasmabolt {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_plasmaboltr4 {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_plasmaboltr5 {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_fleetsupply {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_sensorsynergyR {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_sensorsynergyRA {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_ecccm {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_blackout {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_plasmacoil {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_defense_patterns {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_excessive {
++ keyboard X
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_blockadebreaker {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_guidedquantums {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_precise {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_antimattermine {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_pointdefense {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_pointdefenser6 {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_pointdefenseY {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_pointdefenseYr6 {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_nanites_remore {
++ keyboard N
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_critical {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_criticalr4 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_criticalr5 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_distortion {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_advmagnan {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_advmagnanA {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_fedS_fullscan {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_type3torpedoes {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fedS_type3torpedoesA {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+
+wc_fed_remoore_borR {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_akira_domR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_fed_monsoon_kliR {
++ keyboard K
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_defiant_romR {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Klingon###
+
+bc_kli_kahless_stationY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kahless_stationZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgradeWY {
++ keyboard W
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgradeWZ {
++ keyboard W
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgradeIY {
++ keyboard I
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgradeIZ {
++ keyboard I
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgrade3Y {
++ keyboard H
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kahless_upgrade3Z {
++ keyboard H
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_mining_station {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_mining_stationZ {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardY {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardZ {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP2Y {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP2Z {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP1Y {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP1Z {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP3Y {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_yardP3Z {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_researchY {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_field_researchZ {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_battle_yardY {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_battle_yardZ {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_armoryY {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_armoryZ {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_mixedtech_yard_bor {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_mixedtech_yard_borA {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_ordnance_depotY {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_ordnance_depotZ {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_imperial_yardY {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_imperial_yardZ {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_imperial_researchY {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_imperial_researchZ {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_moqbara_stationY {
++ keyboard F11
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_moqbara_stationZ {
++ keyboard F11
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_platformY {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_platformZ {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+
+bc_kli_chorY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_chorZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_topmey {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_topmeyZ {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_noqduj {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawdujS {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawdujSYT {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_freighterY {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_bor_freighterYU {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_brel {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_brelZ {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kbeajq {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kbeajqZ {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kvortY {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kvortZ {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_susa {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_veqlaragh {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_kli_chargh {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_sang {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_sangZ {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawduj {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawdujYT {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_vorchaY {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_vorchaZ {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_vutpaY {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_vutpaZ {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_luspet {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_kli_edjen {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawduj_bor {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawduj_borYT {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_chonaq_dom {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_chonaq_domYT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kvort_fed {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_kvort_fedYT {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_brel_rom {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_kli_chonaqY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_chonaq {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_neghvarY {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_neghvarZ {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_bortasY {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_bortasZ {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Research###
+
+bc_kliR_heavy_disruptor {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_torpedo_drone {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_fatigue {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_sbtorp {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_lastditch {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_alt_armament {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_kliR_compound {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_qawduj1 {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_qawduj2 {
++ keyboard Q
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_polaron {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_missilestorm {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_disrupt {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_fieldoffire {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_kliR_energybuffer {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_bortas1 {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_bortas2 {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_overload {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliR_largescalecloak {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_weapons1 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_weapons2 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_shields1 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_shields2 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_engines1 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kliU_engines2 {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+
+###Abilities###
+
+wc_kli_dispatch {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_heavy_disruptor {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_homing {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_fatigue {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_sb_torpedo {
++ keyboard B
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_lastditch {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_alt_armament {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_alt_armamentA {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_kli_compound {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_imperial_stance {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_gravseekmissile {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_polaronfield {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_polaron {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_missilestorm {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_vutpaR {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_disrupt {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_fieldoffire {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_kli_scramblingprobe {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_kli_energybuffer {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_energybufferA {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_combat_tractor {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_attackprobe {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_attackprober4 {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_attackprober5 {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_ion_storm {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_ion_stormr4 {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_ion_stormr5 {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_ion_stormr6 {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_overload {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+
+wc_kli_qawduj_borR {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_chonaq_domR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_kvort_fedR {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_kli_brel_romR {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Romulan###
+
+bc_rom_starbaseY {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_starbaseZ {
++ keyboard F1
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_mining_colony {
++ keyboard F2
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_staryardY {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_staryardZ {
++ keyboard F3
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_research_instituteY {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_research_instituteZ {
++ keyboard F4
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_mixedtech_yard_bor {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_mixedtech_yard_borA {
++ keyboard F5
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_warbird_yardY {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_warbird_yardZ {
++ keyboard F6
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_talshiar_academyY {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_talshiar_academyZ {
++ keyboard F7
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_upgrade_facilityY {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_upgrade_facilityZ {
++ keyboard F8
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_cloaking_generator {
++ keyboard F9
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_intelligen_centerY {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_intelligen_centerZ {
++ keyboard F10
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_singularitytrans {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_singularitytransZ {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_disruptor_turret {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_disruptor_turretZ {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_spy_satellite {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_rom_mogaiY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_mogaiZ {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_fakairu {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_talon {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_rom_shrike {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_shrikeT {
++ keyboard K
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhiennY {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhiennYT {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhiennT {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_phaserY {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_phaserYT {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_phaser {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_phaserT {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_rhienn_phaserR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_rhienn_phaserYR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_torpedoY {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_torpedoYT {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_torpedo {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_torpedoT {
++ keyboard O
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_rhienn_torpedoR {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_rhienn_torpedoYR {
++ keyboard O
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generixY {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generixYT {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generixT {
++ keyboard G
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_generix_spcR {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_generix_spcYR {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_generix_cenR {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_generix_cenYR {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_kli_qawduj_rom {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sinT {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sinYT {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sinYTT {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_spcY {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_spcYT {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_spc {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_spcT {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sinY {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_cenYT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sin {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_cenT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahvalY {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahvalYT {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahvalZ {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahvalZT {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_griffin {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_griffinT {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkasY {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkasYT {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkasZ {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkasZT {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_rom_saeihr {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_saeihrT {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_bor {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_borTT {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_borYT {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_rhienn_borYTT {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkas_dom {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkas_domTT {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkas_domYT {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_serkas_domYTT {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahval_fed {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahval_fedTT {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahval_fedYT {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_leahval_fedYTT {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_sinM {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_cen_kliTT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_cen_kliYT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_generix_cen_kliYTT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_rom_eresis {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_eresisT {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_cehlaer {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_cehlaerT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_cehlaerYT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_cehlaerYTT {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_dderidexY {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_dderidexYT {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_dderidexZ {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_dderidexZT {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_norexanY {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_norexanYT {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_norexanZ {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_norexanZT {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_tavaraY {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_tavaraYT {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_tavaraZ {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_rom_tavaraZT {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_romR_phaseplates {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_multi_targeting {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_vector {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_arlterium {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_harmonicimpl {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_plasmamine {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_refractive {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_leahval1 {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_leahval2 {
++ keyboard L
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_sensor_jammer {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_unstable {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_silentresolve {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_radiation {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_bombardment {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_stealth {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romR_multipurpose {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_weapons1 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_weapons2 {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_shields1 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_shields2 {
++ keyboard S
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_sensors1 {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_romU_sensors2 {
++ keyboard A
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+###Abilities###
+
+wc_rom_starbase_upgradePY {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgradePZ {
++ keyboard P
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgradeCY {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgradeCZ {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgradeSY {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgradeSZ {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgrade4Y {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_starbase_upgrade4Z {
++ keyboard C
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+wc_rom_phaseplates {
++ keyboard Z
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_multi_targeting {
++ keyboard M
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_vector {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_arlterium {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_arlteriumr4 {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_arlteriumr5 {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_arlteriumr6 {
++ keyboard L
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_harmonicimpl {
++ keyboard H
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_plasmamine {
++ keyboard N
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_refractive {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_refractiver6 {
++ keyboard C
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_metaphasic {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_metaphasicM {
++ keyboard E
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_auto_repair {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_auto_repairM {
++ keyboard U
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_energy_reeling {
++ keyboard V
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_sensorjammer {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_sensorjammerr4 {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_sensorjammerr6 {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_unstable {
++ keyboard J
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_silentresolve {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_silentresolver6 {
++ keyboard X
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_radiation {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_radiationr4 {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_radiationr5 {
++ keyboard I
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_bombardment {
++ keyboard D
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_stealth_field {
++ keyboard F
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_multipurpose {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_multipurposeA {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_multipurposer4 {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_multipurposer5 {
++ keyboard Y
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_transwarp {
++ keyboard W
+- keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+
+wc_rom_rhienn_borR {
++ keyboard B
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_serkas_domR {
++ keyboard D
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_leahval_fedR {
++ keyboard F
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_rom_generix_cen_kliR {
++ keyboard K
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+#######################
+
+bc_all_supply_routes {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes1 {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes1_kli {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes2 {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes2_kli {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes3 {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes3_kli {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes4 {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes4_kli {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes5 {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+bc_all_supply_routes5_kli {
++ keyboard S
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+
+bc_all_alliedrepair {
++ keyboard R
++ keyboard Shift
+- keyboard Control
+- keyboard Alt
+}
+wc_all_detection {
++ keyboard I
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+
+wc_dom_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_fedS_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_kli_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_kli_cloak_ktinga {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_kli_cloak_bortas {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_kli_cloak_large {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_kli_cloak_rom {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_nbre_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_generix {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_leahvalM {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_station {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_station2 {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_station3 {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_supreme {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}
+wc_rom_cloak_tavara {
++ keyboard C
+- keyboard Shift
++ keyboard Control
+- keyboard Alt
+}

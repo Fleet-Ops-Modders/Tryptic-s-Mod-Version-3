@@ -1,0 +1,122 @@
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 0;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+	//Startup
+	"bor_assemblerZ",			 1,0, -1,  1,
+	"bor_uni_matrix",			 1,0, -1,  0,
+	"bor_freighter",			 3,0, -1,  0,
+	"bor_resource_nodeA",		 1,0, -1,  0,
+	"bor_resource_nodeA",		 1,1, -1,  0,
+	"bor_freighter",			 1,0, -1,  0,
+	"borU_vinculumS",			 1,0, 1,  0,
+	"bor_freighter",			 1,0, -1,  0,
+	"bor_uplinkZA",				 1,0, -1,  0,
+	"bor_freighter",			 1,0, -1,  0,
+	"bor_detector",				 1,0, -1,  0,
+
+	//Base Vessels
+	"bor_interceptor",			 1,0, -1,  0,
+	"borU_vinculumS",			 1,0, 1,  0,
+	"bor_scoutcube_I",			 1,0, -1,  -1,
+	"borU_vinculumS",			 1,0, 1,  0,
+	"bor_interceptor",			 1,0, -1,  0,
+	"bor_scoutcube_R",			 1,0, -1,  -3,
+//	"bor_scoutcube_E",			 1,0, 3,  0,
+	"borU_vinculumS",			 1,0, 2,  0,
+	"bor_dodeca_II",			 1,0, 2,  0,
+	"borU_vinculumS",			 1,0, 2,  0,
+	"bor_dodeca_II",			 1,0, -1,  0,
+
+	//Techphase 1
+	"borU_vinculumS",			 1,0, 1,  0,
+	"bor_dodeca_relayRA",		 1,2, -1,  0,
+	"bor_uni_matrix",			 1,0, -1,  0,
+
+	//Military Phase 1
+	"bor_detector",				 1,0, 3,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_adaptor_EE",			 1,0, -1,  0,
+	"bor_adap_matrix_dom",		 1,0, -1,  0,
+	"borU_adaption1",			 1,0, -1,  0,
+	"bor_assimilatorZ_BTR",		 1,0, -1,  0,
+	"borR_regeneration",		 1,0, -1,  2,
+	"borR_slizer",				 1,0, -1,  0,
+	
+	//Techphase 2
+	"bor_incubationZ",			 1,2, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"borU_vinculumS",			 1,0, 1,  0,
+	"bor_assimilatorZ_ZZN",	 	 1,0, 3,  -2,
+	"bor_adaptor_RO",			 1,0, -1,  0,
+	"bor_col_matrix",			 1,0, -1,  0,
+
+	//Military Phase 2
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_sphere_RRRT",		 	 1,0, -1,  0,
+
+	//Expansion 1
+	"bor_resource_nodeA",		 1,3, -1,  0,
+	"bor_freighter",			 2,0, -1,  0,
+	"borU_adaption2",			 1,0, -1,  0,
+
+	//Techphase 3
+	"borR_baseholding",			 1,0, -1,  0,
+	"bor_incubationZ",			 1,3, -1,  0,
+
+	//Military Phase 3
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_sphere_BBBH",			 1,0, -1,  0,
+	"borR_devestating",			 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_sphere_RRRT",		 	 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_pyramid_RRTN",		 	 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_pyramid_HHHH",			 1,0, -1,  0,
+
+	//Expansion 2
+	"bor_resource_nodeA",		 1,5, -1,  0,
+	"bor_freighter",			 2,5, -1,  0,
+	"bor_resource_nodeA",		 1,6, -1,  0,
+	"bor_freighter",			 2,5, -1,  0,
+	"bor_incubationZ",			 1,4, -1,  0,
+
+	//Techphase 4
+
+	//Military Phase 4
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_diamond_BDDD",		 	 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_diamond_BRTH",			 1,0, -1,  0,
+	"borU_vinculumL",			 1,0, 1,  0,
+	"bor_cube_TTRHHH",			 1,0, -1,  0,
+	"borU_vinculumL",			 1,0, 1,  0,
+	"bor_cube_BTTRMM",			 1,0, -1,  0,
+	"borU_vinculumL",			 1,0, 1,  0,
+	"bor_cube_BTRHHM",			 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_sphere_RRRT",		 	 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_sphere_BBBH",			 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_pyramid_RRTN",		 	 1,0, -1,  0,
+	"borU_vinculumM",			 1,0, 1,  0,
+	"bor_pyramid_HHHH",			 1,0, -1,  0,
+
+	//Final Military Phase 1
+	"bor_cube_TTRHHH",			 2,0, -1,  0,
+	"bor_cube_BTTRMM",			 1,0, -1,  0,
+	"bor_cube_BTRHHM",			 1,0, -1,  0,
+	"bor_diamond_BDDD",		 	 1,0, -1,  0,
+	"bor_diamond_BRTH",			 1,0, -1,  0,
+	"bor_sphere_RRRT",		 	 1,0, -1,  0,
+	"bor_sphere_BBBH",			 1,0, -1,  0,
+	"bor_pyramid_RRTN",		 	 1,0, -1,  0,
+	"bor_pyramid_HHHH",			 1,0, -1,  0,
+	"bor_assimilatorZ_ZZN",		 1,0, -1,  0,
+	"bor_assimilatorZ_BTR",		 1,0, -1,  0,
+}; 
+

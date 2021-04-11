@@ -1,0 +1,150 @@
+	// Map Definitions
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1815
+	Handle trigger_1815
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1813
+	Handle trigger_1813
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1750
+	Handle trigger_1750
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1749
+	Handle trigger_1749
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1748
+	Handle trigger_1748
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1747
+	Handle trigger_1747
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1745
+	Handle trigger_1745
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1744
+	Handle trigger_1744
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1741
+	Handle trigger_1741
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1740
+	Handle trigger_1740
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1738
+	Handle trigger_1738
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1646
+	Handle trigger_1646
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1637
+	Handle trigger_1637
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1636
+	Handle trigger_1636
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1631
+	Handle trigger_1631
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1630
+	Handle trigger_1630
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1629
+	Handle trigger_1629
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1628
+	Handle trigger_1628
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1627
+	Handle trigger_1627
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1626
+	Handle trigger_1626
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1819
+	Handle trigger_1819
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1823
+	Handle trigger_1823
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1824
+	Handle trigger_1824
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1825
+	Handle trigger_1825
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1826
+	Handle trigger_1826
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1827
+	Handle trigger_1827
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1828
+	Handle trigger_1828
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1829
+	Handle trigger_1829
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1830
+	Handle trigger_1830
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2256
+	Handle trigger_2256
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1815 = GetHandle( "trigger_1815" );
+	trigger_1813 = GetHandle( "trigger_1813" );
+	trigger_1750 = GetHandle( "trigger_1750" );
+	trigger_1749 = GetHandle( "trigger_1749" );
+	trigger_1748 = GetHandle( "trigger_1748" );
+	trigger_1747 = GetHandle( "trigger_1747" );
+	trigger_1745 = GetHandle( "trigger_1745" );
+	trigger_1744 = GetHandle( "trigger_1744" );
+	trigger_1741 = GetHandle( "trigger_1741" );
+	trigger_1740 = GetHandle( "trigger_1740" );
+	trigger_1738 = GetHandle( "trigger_1738" );
+	trigger_1646 = GetHandle( "trigger_1646" );
+	trigger_1637 = GetHandle( "trigger_1637" );
+	trigger_1636 = GetHandle( "trigger_1636" );
+	trigger_1631 = GetHandle( "trigger_1631" );
+	trigger_1630 = GetHandle( "trigger_1630" );
+	trigger_1629 = GetHandle( "trigger_1629" );
+	trigger_1628 = GetHandle( "trigger_1628" );
+	trigger_1627 = GetHandle( "trigger_1627" );
+	trigger_1626 = GetHandle( "trigger_1626" );
+	trigger_1819 = GetHandle( "trigger_1819" );
+	trigger_1823 = GetHandle( "trigger_1823" );
+	trigger_1824 = GetHandle( "trigger_1824" );
+	trigger_1825 = GetHandle( "trigger_1825" );
+	trigger_1826 = GetHandle( "trigger_1826" );
+	trigger_1827 = GetHandle( "trigger_1827" );
+	trigger_1828 = GetHandle( "trigger_1828" );
+	trigger_1829 = GetHandle( "trigger_1829" );
+	trigger_1830 = GetHandle( "trigger_1830" );
+	trigger_2256 = GetHandle( "trigger_2256" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "path_1" (2 points)
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (2 points)
+	// Path: "Camera_3" (2 points)
+	// Path: "Camera_4" (2 points)
+	// Path: "Camera_5" (2 points)
+	// Path: "Camera_6" (1 points)
+	// Path: "path_4" (1 points)
+	// Path: "path_4" (1 points)
+	// Path: "path_5" (1 points)
+	// Path: "path_7" (1 points)
+	// Path: "path_1" (1 points)

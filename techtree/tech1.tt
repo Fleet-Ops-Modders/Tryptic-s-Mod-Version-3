@@ -1,0 +1,1460 @@
+all_deathblossom.odf 0
+
+bor_techtransfer.odf 0
+dom_techtransfer.odf 0
+fed_techtransfer.odf 0
+kli_techtransfer.odf 0
+rom_techtransfer.odf 0
+all_technology_bor.odf 0
+all_technology_dom.odf 0
+all_technology_fed.odf 0
+all_technology_kli.odf 0
+all_technology_rom.odf 0
+passive_technology_bor.odf 1 all_technology_bor.odf
+passive_technology_dom.odf 1 all_technology_dom.odf
+passive_technology_fed.odf 1 all_technology_fed.odf
+passive_technology_kli.odf 1 all_technology_kli.odf
+passive_technology_rom.odf 1 all_technology_rom.odf
+
+all_supply_routes1.odf 0
+all_supply_routes2.odf 1 all_supply_routes1.odf
+all_supply_routes3.odf 1 all_supply_routes2.odf
+all_supply_routes4.odf 1 all_supply_routes3.odf
+all_supply_routes5.odf 1 all_supply_routes4.odf
+all_supply_routes1_fedZ.odf 0
+all_supply_routes2_fedZ.odf 1 all_supply_routes1_fedZ.odf
+all_supply_routes3_fedZ.odf 1 all_supply_routes2_fedZ.odf
+all_supply_routes4_fedZ.odf 1 all_supply_routes3_fedZ.odf
+all_supply_routes5_fedZ.odf 1 all_supply_routes4_fedZ.odf
+all_supply_routes1_kli.odf 0
+all_supply_routes2_kli.odf 1 all_supply_routes1_kli.odf
+all_supply_routes3_kli.odf 1 all_supply_routes2_kli.odf
+all_supply_routes4_kli.odf 1 all_supply_routes3_kli.odf
+all_supply_routes5_kli.odf 1 all_supply_routes4_kli.odf
+all_tachion_scan.odf 0
+all_detection.odf 0
+all_halt.odf 0
+all_no_research.odf 0
+all_alliedrepair.odf 0
+all_tachyon_pingS.odf 0
+all_tachyon_pingM.odf 0
+all_tachyon_pingL.odf 0
+all_tachyon_pingAS.odf 0
+all_tachyon_pingAM.odf 0
+all_tachyon_pingAL.odf 0
+all_mine_dilithium.odf 0
+all_mine_tritanium.odf 0
+
+avatar_bor_optimize.odf 0
+avatar_bor_assimilate.odf 0
+avatar_dom_breen.odf 0
+avatar_dom_pure.odf 0
+avatar_fed_mayson.odf 0
+avatar_fed_risner.odf 0
+avatar_kli_taqroja.odf 0
+avatar_kli_martok.odf 0
+avatar_rom_mijural.odf 0
+avatar_rom_helev.odf 0
+
+all_veteran2.odf 0
+all_veteran3.odf 0
+all_veteran4.odf 0
+all_veteran5.odf 0
+all_veteran6.odf 0
+all_veteran7.odf 0
+all_veteran8.odf 0
+all_veteran9.odf 0
+all_veteran10.odf 0
+all_veteran11.odf 0
+all_veteran23.odf 0
+all_veteran_phalanx.odf 0
+all_veteran_defender.odf 0
+all_veteran_tavara.odf 0
+
+fed_command_nor.odf 0
+fed_command_war.odf 0
+fed_command_sov.odf 0
+kli_command_edj.odf 0
+kli_command_vut.odf 0
+kli_command_neg.odf 0
+kli_command_moq.odf 1 all_WIP.odf
+rom_command_dde.odf 0
+rom_command_tav.odf 0
+
+////////Borg////////
+
+////////Structures////////
+
+bor_assi_matrixY.odf 0
+bor_assi_matrixZ.odf 0
+bor_uni_matrix.odf 0		//Conduction Matrix
+bor_adap_matrix_dom.odf 1 bor_uni_matrix.odf
+bor_incubationY.odf 0
+bor_incubationZ.odf 0
+bor_col_matrix.odf 1 bor_adap_matrix_dom.odf	//Transmission Matrix
+bor_uplinkY.odf 1 bor_uni_matrix.odf
+bor_uplinkZ.odf 1 bor_uni_matrix.odf
+bor_recycling_center.odf 1 bor_adap_matrix_dom.odf
+
+//Upgrades
+bor_incubationUR.odf 0		//Optimize only
+bor_assi_matrix_upgradeAY.odf 1 bor_uni_matrix.odf
+bor_assi_matrix_upgradeFY.odf 1 bor_adap_matrix_dom.odf
+bor_assi_matrix_upgradeLY.odf 1 bor_adap_matrix_dom.odf
+bor_assi_matrix_upgrade4Y.odf 1 bor_col_matrix.odf
+bor_assi_matrix_upgradeAZ.odf 1 bor_uni_matrix.odf
+bor_assi_matrix_upgradeFZ.odf 1 bor_adap_matrix_dom.odf
+bor_assi_matrix_upgradeLZ.odf 1 bor_adap_matrix_dom.odf
+bor_assi_matrix_upgrade4Z.odf 1 bor_col_matrix.odf
+
+//Mixed-Tech: adaption matrices
+
+//Currently Unused
+bor_uplink.odf 1 bor_uni_matrix.odf
+bor_turret.odf 0
+bor_adap_matrix_domA.odf 0
+bor_adap_matrix_fed.odf 0
+bor_adap_matrix_fedA.odf 0
+bor_adap_matrix_kli.odf 0
+bor_adap_matrix_kliA.odf 0
+bor_adap_matrix_rom.odf 0
+bor_adap_matrix_romA.odf 0
+
+////////Units////////
+
+bor_assemblerY.odf 0
+bor_assemblerZ.odf 0
+bor_freighterY.odf 0
+bor_freighter.odf 0
+bor_detector.odf 0
+bor_interceptorYT.odf 0
+bor_interceptor.odf 0
+
+bor_scoutcubeYR.odf 1 borU_vinculumSA.odf
+bor_scoutcubeR.odf 1 borU_vinculumSA.odf
+bor_dodecaYR.odf 1 borU_vinculumSA.odf
+bor_dodecaR.odf 1 borU_vinculumSA.odf
+bor_adaptorYR.odf 1 borU_vinculumSA.odf
+bor_adaptorR.odf 1 borU_vinculumSA.odf
+bor_assimilatorYR.odf 1 borU_vinculumMA.odf
+bor_assimilatorZR.odf 1 borU_vinculumMA.odf
+bor_sphereYR.odf 2 bor_adap_matrix_dom.odf borU_vinculumMA.odf
+bor_sphereR.odf 2 bor_adap_matrix_dom.odf borU_vinculumMA.odf
+bor_pyramidR.odf 2 bor_adap_matrix_dom.odf borU_vinculumMA.odf
+bor_diamondYR.odf 2 bor_col_matrix.odf borU_vinculumMA.odf
+bor_diamondR.odf 2 bor_col_matrix.odf borU_vinculumMA.odf
+bor_cubeYR.odf 1 borU_vinculumLA.odf
+bor_cubeR.odf 1 borU_vinculumLA.odf
+
+//Currently Unused
+bor_assimilatorR.odf 0
+
+////////Research////////
+
+borU_vinculumS.odf 0
+borU_vinculumM.odf 0
+borU_vinculumL.odf 1 bor_col_matrix.odf
+borU_adaption1.odf 0
+borU_adaption2.odf 1 borU_adaption1.odf
+borU_adaption3.odf 1 borU_adaption2.odf
+borU_adaption4.odf 1 borU_adaption3.odf
+borU_adaption5.odf 1 borU_adaption4.odf
+borR_sensor_relay.odf 0
+borR_baseholding.odf 0
+borR_slicer.odf 0
+borR_devastating.odf 0
+borR_transwarp.odf 0
+borR_datamining.odf 0
+borR_regeneration.odf 0
+borR_nanites.odf 0
+borR_board.odf 0
+
+passive_upgrade_bor_A1.odf 1 borU_adaption1.odf
+passive_upgrade_bor_A2.odf 1 borU_adaption2.odf
+passive_upgrade_bor_A3.odf 1 borU_adaption3.odf
+passive_upgrade_bor_A4.odf 1 borU_adaption4.odf
+passive_upgrade_bor_A5.odf 1 borU_adaption5.odf
+passive_upgrade_bor_S.odf 1 borR_datamining.odf
+
+//Currently Unused
+borR_logistics.odf 0
+borR_futile.odf 0 //Resistance is Futile
+borR_partadapt.odf 0
+
+////////Special Abilities////////
+
+borS_sensor_relay.odf 1 borR_sensor_relay.odf
+borS_sensor_relay_probe.odf 1 borR_sensor_relay.odf
+bor_stations_hol.odf 1 borR_baseholding.odf
+bor_relay_hol.odf 1 borR_baseholding.odf
+borS_slicer_probe.odf 1 borR_slicer.odf
+borS_slicer_dode.odf 1 borR_slicer.odf
+borS_slicer_adap.odf 1 borR_slicer.odf
+borS_slicer_scube.odf 1 borR_slicer.odf
+borS_slicer_assi.odf 1 borR_slicer.odf
+borS_slicer_sphere.odf 1 borR_slicer.odf
+borS_slicer_diamond.odf 1 borR_slicer.odf
+borS_slicer_cube.odf 1 borR_slicer.odf
+borS_devastating_probe.odf 1 borR_devastating.odf
+borS_devastating_scube.odf 1 borR_devastating.odf
+borS_devastating_dode.odf 1 borR_devastating.odf
+borS_devastating_adap.odf 1 borR_devastating.odf
+borS_devastating_assi.odf 1 borR_devastating.odf
+borS_devastating_sphere.odf 1 borR_devastating.odf
+borS_devastating_diamond.odf 1 borR_devastating.odf
+borS_devastating_cube.odf 1 borR_devastating.odf
+bor_freighterUR.odf 1 borR_logistics.odf
+bor_sensor_scan.odf 1 borR_datamining.odf
+bor_detector_reg.odf 1 borR_regeneration.odf
+bor_interceptor_reg.odf 1 borR_regeneration.odf
+bor_scoutcube_reg_slow.odf 1 borR_regeneration.odf
+bor_scoutcube_reg_fast.odf 1 borR_regeneration.odf
+bor_dodeca_reg_slow.odf 1 borR_regeneration.odf
+bor_dodeca_reg_fast.odf 1 borR_regeneration.odf
+bor_adaptor_reg_slow.odf 1 borR_regeneration.odf
+bor_adaptor_reg_fast.odf 1 borR_regeneration.odf
+bor_relay_reg.odf 1 borR_regeneration.odf
+borS_nanites_sphere.odf 1 borR_nanites.odf
+borS_nanites_diamond.odf 1 borR_nanites.odf
+borS_nanites_cube.odf 1 borR_nanites.odf
+borS_board_probe.odf 1 borR_board.odf
+borS_board_scube.odf 1 borR_board.odf
+borS_board_dode.odf 1 borR_board.odf
+borS_board_relay.odf 1 borR_board.odf
+borS_board_adap.odf 1 borR_board.odf
+borS_board_assi.odf 1 borR_board.odf
+borS_board_sphere.odf 1 borR_board.odf
+borS_board_pyramid.odf 1 borR_board.odf
+borS_board_diamond.odf 1 borR_board.odf
+borS_board_cube.odf 1 borR_board.odf
+
+bor_recycle_dilithium.odf 0
+bor_recycle_tritanium.odf 0
+borS_matrixteleport.odf 0
+bor_areaboard.odf 0
+borS_refresh.odf 1 all_WIP.odf
+borS_refresh2.odf 1 all_WIP.odf
+bor_resource_nodeR.odf 0
+bor_freighter_reg.odf 1 borR_regeneration.odf
+bor_sensor_ping.odf 0
+bor_emaura.odf 0
+borS_axial.odf 0
+borS_axialA.odf 0
+borS_neuraltransceiver.odf 0
+borS_vinculum.odf 0
+bor_dodeca_relayIT.odf 0
+bor_dodeca_relayRT.odf 0
+bor_dodeca_relayVT.odf 0
+bor_dodeca_deployC.odf 0
+bor_dodeca_relocate.odf 0
+borS_emdome.odf 0
+borS_emdomeA.odf 0
+borS_nanitefactory.odf 0
+borS_order_D.odf 0
+borS_order_DD.odf 0
+borS_order_DDD.odf 0
+bor_fortification.odf 0
+borS_uplinkYR.odf 1 bor_uni_matrix.odf
+borS_uplinkZR.odf 1 bor_uni_matrix.odf
+
+//Currently Unused
+bor_remodulate.odf 0
+bor_remodulateA.odf 0
+bor_remodulate_warp.odf 0
+bor_remodulate_reg.odf 0
+bor_dodeca_relayC.odf 0
+borS_transwarp_detector.odf 1 borR_transwarp.odf
+borS_transwarp_probe.odf 1 borR_transwarp.odf
+borS_transwarp_scube.odf 1 borR_transwarp.odf
+
+//Used by AI only
+bor_sensorA.odf 0
+bor_sensor_advA.odf 0
+
+//Blue Beam, Holding Beam, Regeneration
+bor_assimilator_AAA_ass.odf 0
+bor_assimilator_BAA_ass.odf 0
+bor_assimilator_BRA_ass.odf 0
+bor_assimilator_BTA_ass.odf 0
+bor_assimilator_RAA_ass.odf 0
+bor_assimilator_TAA_ass.odf 0
+bor_assimilator_TRA_ass.odf 0
+bor_assimilator_TTA_ass.odf 0
+bor_assimilatorZ_BRZ_ass.odf 0
+bor_assimilatorZ_BTZ_ass.odf 0
+bor_assimilatorZ_BZN_ass.odf 0
+bor_assimilatorZ_BZZ_ass.odf 0
+bor_assimilatorZ_RZN_ass.odf 0
+bor_assimilatorZ_RZZ_ass.odf 0
+bor_assimilatorZ_TRZ_ass.odf 0
+bor_assimilatorZ_TTZ_ass.odf 0
+bor_assimilatorZ_TZN_ass.odf 0
+bor_assimilatorZ_TZZ_ass.odf 0
+bor_assimilatorZ_ZZN_ass.odf 0
+bor_adaptor_EO_hol.odf 0
+bor_adaptor_OO_hol.odf 0
+bor_adaptor_RO_hol.odf 0
+bor_adaptor_TO_hol.odf 0
+bor_sphereY_BBBH_hol.odf 0
+bor_sphereY_BBHT_hol.odf 0
+bor_sphereY_BBRH_hol.odf 0
+bor_sphereY_BRHT_hol.odf 0
+bor_sphereY_BRRH_hol.odf 0
+bor_sphereY_RRHT_hol.odf 0
+bor_sphereY_RRRH_hol.odf 0
+bor_sphereY_BBHS_hol.odf 0
+bor_sphereY_BHSS_hol.odf 0
+bor_sphereY_BHTS_hol.odf 0
+bor_sphereY_BRHS_hol.odf 0
+bor_sphereY_HSSS_hol.odf 0
+bor_sphereY_HTSS_hol.odf 0
+bor_sphereY_RHSS_hol.odf 0
+bor_sphereY_RHTS_hol.odf 0
+bor_sphereY_RRHS_hol.odf 0
+bor_sphereY_BBRR_reg.odf 0
+bor_sphereY_BRRH_reg.odf 0
+bor_sphereY_BRRR_reg.odf 0
+bor_sphereY_BRRT_reg.odf 0
+bor_sphereY_RRHT_reg.odf 0
+bor_sphereY_RRRH_reg.odf 0
+bor_sphereY_RRRT_reg.odf 0
+bor_sphereY_BRRS_reg.odf 0
+bor_sphereY_RRHS_reg.odf 0
+bor_sphereY_RRRS_reg.odf 0
+bor_sphereY_RRSS_reg.odf 0
+bor_sphereY_RRTS_reg.odf 0
+bor_sphere_BBBH_hol.odf 0
+bor_sphere_BBHT_hol.odf 0
+bor_sphere_BBRH_hol.odf 0
+bor_sphere_BRHT_hol.odf 0
+bor_sphere_BRRH_hol.odf 0
+bor_sphere_RRHT_hol.odf 0
+bor_sphere_RRRH_hol.odf 0
+bor_sphere_BBRR_reg.odf 0
+bor_sphere_BRRH_reg.odf 0
+bor_sphere_BRRR_reg.odf 0
+bor_sphere_BRRT_reg.odf 0
+bor_sphere_RRHT_reg.odf 0
+bor_sphere_RRRH_reg.odf 0
+bor_sphere_RRRT_reg.odf 0
+bor_pyramid_RRHH_reg.odf 0
+bor_pyramid_RRHN_reg.odf 0
+bor_pyramid_RRHT_reg.odf 0
+bor_pyramid_RRTN_reg.odf 0
+bor_pyramid_HHHH_hol.odf 0
+bor_pyramid_HHHN_hol.odf 0
+bor_pyramid_HHHT_hol.odf 0
+bor_pyramid_HHTN_hol.odf 0
+bor_pyramid_RHHH_hol.odf 0
+bor_pyramid_RHHN_hol.odf 0
+bor_pyramid_RHHT_hol.odf 0
+bor_pyramid_RHTN_hol.odf 0
+bor_pyramid_RRHH_hol.odf 0
+bor_pyramid_RRHN_hol.odf 0
+bor_pyramid_RRHT_hol.odf 0
+bor_diamond_BHDD_hol.odf 0
+bor_diamond_BRHD_hol.odf 0
+bor_diamond_BRTH_hol.odf 0
+bor_diamond_BTHD_hol.odf 0
+bor_diamond_HDDD_hol.odf 0
+bor_diamond_RHDD_hol.odf 0
+bor_diamond_RTHD_hol.odf 0
+bor_diamond_THDD_hol.odf 0
+bor_cube_BHHHMM_hol.odf 0
+bor_cube_BRHHHM_hol.odf 0
+bor_cube_BRHHMM_hol.odf 0
+bor_cube_BTHHHM_hol.odf 0
+bor_cube_BTHHMM_hol.odf 0
+bor_cube_BTRHHH_hol.odf 0
+bor_cube_BTRHHM_hol.odf 0
+bor_cube_BTRHMM_hol.odf 0
+bor_cube_BTTHHH_hol.odf 0
+bor_cube_BTTHHM_hol.odf 0
+bor_cube_BTTHMM_hol.odf 0
+bor_cube_BTTRHH_hol.odf 0
+bor_cube_BTTRHM_hol.odf 0
+bor_cube_BTTTHH_hol.odf 0
+bor_cube_BTTTHM_hol.odf 0
+bor_cube_BTTTRH_hol.odf 0
+bor_cube_RHHHMM_hol.odf 0
+bor_cube_THHHMM_hol.odf 0
+bor_cube_TRHHHM_hol.odf 0
+bor_cube_TRHHMM_hol.odf 0
+bor_cube_TTHHHM_hol.odf 0
+bor_cube_TTHHMM_hol.odf 0
+bor_cube_TTRHHH_hol.odf 0
+bor_cube_TTRHHM_hol.odf 0
+bor_cube_TTRHMM_hol.odf 0
+bor_cube_TTTHHH_hol.odf 0
+bor_cube_TTTHHM_hol.odf 0
+bor_cube_TTTHMM_hol.odf 0
+bor_cube_TTTRHH_hol.odf 0
+bor_cube_TTTRHM_hol.odf 0
+
+//Dominion
+
+////////Structures////////
+dom_cloning_facY.odf 0
+dom_cloning_facYA.odf 0
+dom_cloning_facZ.odf 0
+dom_cloning_facZA.odf 0
+dom_space_refineryY.odf 0
+dom_space_refineryZ.odf 0
+dom_ketracel_synthY.odf 1 dom_space_refineryY.odf
+dom_ketracel_synthZ.odf 1 dom_space_refineryZ.odf
+dom_yardY.odf 0
+dom_yardZ.odf 0
+dom_technology_labY.odf 1 dom_yardY_techA.odf
+dom_technology_labZ.odf 1 dom_yardZ_techA.odf
+dom_mixedtech_yard_bor.odf 1 dom_technology_labY.odf
+dom_mixedtech_yard_borA.odf 1 dom_technology_labZ.odf
+dom_large_yardY.odf 1 dom_technology_labY.odf
+dom_large_yardZ.odf 1 dom_technology_labZ.odf
+dom_ketracel_facY.odf 1 dom_technology_labY.odf
+dom_ketracel_facZ.odf 1 dom_technology_labZ.odf
+dom_phaser_sentryY.odf 1 dom_yardY_techA.odf
+dom_phaser_sentryZ.odf 1 dom_yardZ_techA.odf
+dom_sensorY.odf 1 dom_technology_labY.odf
+dom_sensorZ.odf 1 dom_technology_labZ.odf
+dom_perimeterZ.odf 1 dom_technology_labZ.odf
+dom_perimeterY.odf 1 dom_technology_labY.odf
+dom_supersensor.odf 1 dom_ketracel_facY.odf
+dom_mixedtech_yard_fed.odf 1 dom_ketracel_facZ.odf
+
+//Upgrades
+dom_cloning_fac_upgradeBY.odf 1 dom_technology_labY.odf
+dom_cloning_fac_upgradeBZ.odf 1 dom_technology_labZ.odf
+dom_cloning_fac_upgradeF.odf 0
+dom_cloning_fac_upgradeKY.odf 1 dom_technology_labY.odf
+dom_cloning_fac_upgradeKZ.odf 1 dom_technology_labZ.odf
+dom_cloning_fac_upgrade4Y.odf 1 dom_ketracel_facY.odf
+dom_cloning_fac_upgrade4Z.odf 1 dom_ketracel_facZ.odf
+dom_perimeter_upgradeY.odf 1 dom_ketracel_facY.odf
+dom_perimeter_upgradeZ.odf 1 dom_ketracel_facZ.odf
+
+dom_yardY12R.odf 0
+dom_yardZ12R.odf 0
+dom_yardY13R.odf 0
+dom_yardZ13R.odf 0
+dom_yardY23R.odf 0
+dom_yardZ23R.odf 0
+dom_large_yardY12R.odf 0
+dom_large_yardZ12R.odf 0
+dom_large_yardY13R.odf 0
+dom_large_yardZ13R.odf 0
+dom_large_yardY23R.odf 0
+dom_large_yardZ23R.odf 0
+
+//Currently Unused
+//dom_mixedtech_yard_fedA.odf 0
+//dom_mixedtech_yard_kli.odf 0 //Puretech Yard Level 2
+//dom_mixedtech_yard_kliA.odf 0 //Breen Yard Level 2
+//dom_mixedtech_yard_rom.odf 0 //Puretech Yard Level 3
+//dom_mixedtech_yard_romA.odf 0 //Breen Yard Level 3
+
+////////Units////////
+
+dom_worker_ship_bY.odf 0
+dom_worker_ship_mY.odf 0
+dom_worker_ship_sY.odf 0
+dom_worker_ship_bZ.odf 0
+dom_worker_ship_mZ.odf 0
+dom_worker_ship_sZ.odf 0
+dom_scout.odf 0
+
+dom_destroyer.odf 0
+dom_bomberPY.odf 1 dom_yard2_requirement
+dom_bomberY.odf 0
+dom_bomberPZ.odf 1 dom_yard2_requirement
+dom_bomberZ.odf 0
+dom_escort_cruiserPY.odf 1 dom_yard2_requirement
+dom_escort_cruiserY.odf 0
+dom_escort_cruiserPZ.odf 1 dom_yard2_requirement
+dom_escort_cruiserZ.odf 0
+dom_intercept_destPY.odf 1 dom_yard3_requirement
+dom_intercept_destY.odf 0
+dom_intercept_destP.odf 1 dom_yard3_requirement
+dom_intercept_dest.odf 0
+dom_warfrigatePY.odf 1 dom_yard3_requirement
+dom_warfrigateY.odf 0
+dom_warfrigatePZ.odf 1 dom_yard3_requirement
+dom_warfrigateZ.odf 0
+dom_destroyer_kli.odf 1 dom_ketracel_facY.odf
+nbre_cruiserDP.odf 1 dom_yard3_requirement
+nbre_cruiserD.odf 0
+
+dom_dreadnought_bor.odf 1 all_technology_bor.odf
+dom_dreadnought_fed.odf 1 all_technology_fed.odf
+dom_dreadnought_kli.odf 1 all_technology_kli.odf
+dom_dreadnought_rom.odf 1 all_technology_rom.odf
+dom_escort_cruiser_bor.odf 1 all_technology_bor.odf
+dom_escort_cruiser_borR.odf 1 all_technology_bor.odf
+dom_siege_cruiser_fed.odf 1 all_technology_fed.odf
+dom_siege_cruiser_fedR.odf 1 all_technology_fed.odf
+dom_emblast_fed.odf 1 domR_siege1.odf
+dom_bomber_kli.odf 1 all_technology_kli.odf
+dom_bomber_kliR.odf 1 all_technology_kli.odf
+dom_intercept_dest_rom.odf 1 all_technology_rom.odf
+dom_intercept_dest_romR.odf 1 all_technology_rom.odf
+domS_cloak_int.odf 0
+
+dom_heavy_cruiser.odf 0
+dom_heavy_cruiserZ.odf 0
+dom_siege_cruiserP.odf 1 dom_large_yard2_req
+dom_siege_cruiser.odf 0
+dom_siege_cruiserPZ.odf 1 dom_large_yard2_req
+dom_siege_cruiserZ.odf 0
+dom_battle_cruiserPY.odf 1 dom_large_yard2_req
+dom_battle_cruiser_fed.odf 0
+dom_battle_cruiserPZ.odf 1 dom_large_yard2_req
+dom_battle_cruiserZ.odf 0
+dom_battleshipPY.odf 1 dom_large_yard3_req
+dom_battleshipY.odf 0
+dom_battleshipPZ.odf 1 dom_large_yard3_req
+dom_battleshipZ.odf 0
+dom_heavy_cruiser_r_rom.odf 1 dom_ketracel_facY.odf
+dom_defenderP.odf 1 dom_large_yard3_req
+dom_defender.odf 0
+nbre_battleshipDP.odf 1 dom_large_yard3_req
+nbre_battleshipD.odf 0
+
+dom_hyper_artilleryY.odf 2 dom_ketracel_facY.odf dom_large_yardY_techA.odf
+dom_hyper_artilleryZ.odf 2 dom_ketracel_facZ.odf dom_large_yardZ_techA.odf
+
+//Currently Unused
+dom_battle_cruiserY.odf 1 dom_battle_cruiserPY.odf
+dom_heavy_cruiser_bor.odf 1 all_mixed_tech.odf
+dom_heavy_cruiser_rom.odf 1 all_mixed_tech.odf
+
+////////Research////////
+
+domR_remotebeacon.odf 0
+domR_passiveprobe.odf 0
+domR_tetphoton.odf 0
+domR_emblast.odf 0
+domR_interception1.odf 0
+domR_interception2.odf 1 domR_interception1.odf
+domR_isbomb.odf 0
+domR_cloak.odf 0
+domR_biowarheads.odf 0
+domR_siege1.odf 0
+domR_siege2.odf 1 domR_siege1.odf
+domR_excessive.odf 0
+domR_coreblast.odf 0
+domR_dampening.odf 0
+
+domU_weapons1.odf 0
+domU_weapons2.odf 1 domU_weapons1.odf
+domU_weapons1Z.odf 0
+domU_weapons2Z.odf 1 domU_weapons1Z.odf
+domU_shields1.odf 0
+domU_shields2.odf 1 domU_shields1.odf
+domU_shields1Z.odf 0
+domU_shields2Z.odf 1 domU_shields1Z.odf
+domU_sensors1.odf 0
+domU_sensors2.odf 1 domU_sensors1.odf
+domU_engines1.odf 0
+domU_engines2.odf 1 domU_engines1.odf
+
+passive_upgrade_dom_W1.odf 1 domU_weapons1.odf
+passive_upgrade_dom_W1Z.odf 1 domU_weapons1Z.odf
+passive_upgrade_dom_W2.odf 1 domU_weapons2.odf
+passive_upgrade_dom_W2Z.odf 1 domU_weapons2Z.odf
+passive_upgrade_dom_D1.odf 1 domU_shields1.odf
+passive_upgrade_dom_D1Z.odf 1 domU_shields1Z.odf
+passive_upgrade_dom_D2.odf 1 domU_shields2.odf
+passive_upgrade_dom_D2Z.odf 1 domU_shields2Z.odf
+passive_upgrade_dom_S1.odf 1 domU_sensors1.odf
+passive_upgrade_dom_S2.odf 1 domU_sensors2.odf
+passive_upgrade_dom_E1.odf 1 domU_engines1.odf
+passive_upgrade_dom_E2.odf 1 domU_engines2.odf
+
+
+////////Special Abilities////////
+
+domS_remotebeacon.odf 1 domR_remotebeacon.odf
+domS_deepscan.odf 1 dom_effectsS.odf
+
+domS_ketracel_synthesis.odf 0
+domS_material_production.odf 0
+dom_work_to_mine.odf 0
+dom_work_to_mineA.odf 0
+dom_work_supply.odf 0
+dom_work_supplyA.odf 0
+domS_passiveprobe.odf 1 domR_passiveprobe.odf
+domS_collision.odf 0
+domS_collisionr2.odf 0
+domS_collisionr3.odf 0
+domS_collisionr4.odf 0
+domS_collisionr5.odf 0
+domS_collisionr6.odf 0
+domS_tetrion_photon.odf 1 domR_tetphoton.odf
+domS_tetrion_compound.odf 1 domR_tetphoton.odf
+domS_emblast.odf 1 domR_emblast.odf
+domS_escort_cruiser_reg.odf 0
+domS_ebeacon.odf 0
+domS_cascade.odf 1 domR_interception1.odf
+domS_alphawhite_int.odf 1 domR_interception2.odf
+domS_isbomb.odf 1 domR_isbomb.odf
+domS_cloak.odf 1 domR_cloak.odf
+
+dom_heavy_cruiserR.odf 1 dom_ketracel_facY.odf
+dom_destroyerR.odf 1 dom_ketracel_facY.odf
+domS_biowarhead.odf 1 domR_biowarheads.odf
+domS_phaseshield.odf 0
+domS_phaseshieldA.odf 0
+domS_alphawhite.odf 1 domR_siege1.odf
+domS_alphawhite_fed.odf 1 domR_siege1.odf
+domS_tetrion_disruptor.odf 1 domR_siege2.odf
+domS_tetrion_disruptorr4.odf 1 domR_siege2.odf
+domS_tetrion_disruptorr5.odf 1 domR_siege2.odf
+domS_tetrion_disruptorr6.odf 1 domR_siege2.odf
+domS_tetrion_disruptorr6t15.odf 0
+domS_excessive.odf 1 domR_excessive.odf
+domS_excessiver6.odf 1 domR_excessive.odf
+domS_coreblast.odf 1 domR_coreblast.odf
+domS_dampening.odf 1 domR_dampening.odf
+domS_artillery.odf 0
+domS_artilleryY.odf 0
+domS_opresence.odf 0
+domS_opresencer4.odf 0
+domS_opresencer5.odf 0
+domS_tetrionsingularity.odf 0
+dom_areaboard.odf 0
+dom_energyfield.odf 0
+
+dom_battle_cruiserFR.odf 0
+dom_battle_cruiserFRr4.odf 0
+dom_battle_cruiserFRr5.odf 0
+dom_battle_cruiserPFR.odf 0
+dom_battle_cruiserFYR.odf 0
+dom_battle_cruiserFYRr4.odf 0
+dom_battle_cruiserFYRr5.odf 0
+dom_battle_cruiserPFYR.odf 0
+dom_siege_cruiser_fedFR2.odf 0
+dom_cloning_facFR8.odf 0
+dom_cloning_facFR12.odf 0
+
+//Currently Unused
+
+//Federation
+
+////////Structures////////
+
+fed_outpostY.odf 0
+fed_outpostYA.odf 0
+fed_outpostY_W.odf 0
+fed_outpostZ.odf 0
+fed_outpostZA.odf 0
+fed_outpostZ_W.odf 0
+fed_storage_dock.odf 0
+fed_antares_yardY.odf 0
+fed_antares_yardZ.odf 0
+fed_sf_engineeringY.odf 0
+fed_sf_engineeringZ.odf 0
+fed_sf_scienceY.odf 2 fed_antares_yardY.odf fed_sf_engineeringY.odf
+fed_sf_scienceZ.odf 2 fed_antares_yardZ.odf fed_sf_engineeringZ.odf
+fed_mixedtech_yard_bor.odf 1 fed_sf_scienceY.odf
+fed_mixedtech_yard_borA.odf 1 fed_sf_scienceZ.odf
+fed_sf_commandY.odf 2 fed_sf_scienceY.odf fed_sf_engineeringY.odf
+fed_sf_commandZ.odf 2 fed_sf_scienceZ.odf fed_sf_engineeringZ.odf
+fed_eraudi_yardY.odf 2 fed_antares_yardY.odf fed_sf_engineeringY.odf
+fed_eraudi_yardZ.odf 2 fed_antares_yardZ.odf fed_sf_engineeringZ.odf
+fed_platformY.odf 1 fed_antares_yardY.odf
+fed_platformZ.odf 1 fed_antares_yardZ.odf
+
+
+//Upgrades
+
+fed_outpost_upgradePY.odf 1 fed_sf_engineeringY.odf
+fed_outpost_upgradePZ.odf 1 fed_sf_engineeringZ.odf
+fed_outpost_upgradeDY.odf 1 fed_sf_engineeringY.odf
+fed_outpost_upgradeDZ.odf 1 fed_sf_engineeringZ.odf
+fed_outpost_upgradeIY.odf 1 fed_sf_scienceY.odf
+fed_outpost_upgradeIZ.odf 1 fed_sf_scienceZ.odf
+fed_outpost_upgrade4Y.odf 2 fed_sf_scienceY.odf fed_eraudi_yardY.odf
+fed_outpost_upgrade4Z.odf 2 fed_sf_scienceZ.odf fed_eraudi_yardZ.odf
+fed_platform_pulseR.odf 0
+fed_platform_pulseZR.odf 0
+fed_platform_phaserYR.odf 1 fed_antares_yardY.odf
+fed_platform_phaserZR.odf 1 fed_antares_yardZ.odf
+fed_platform_sensorZR.odf 1 fed_sf_scienceZ.odf
+fed_platform_sensorYR.odf 1 fed_sf_scienceY.odf
+fed_platform_torpedoZR.odf 1 fed_eraudi_yardZ.odf
+fed_platform_torpedoYR.odf 1 fed_eraudi_yardY.odf
+fed_industrial_replicators.odf 0
+
+//Currently Unused
+fed_spacedockY.odf 1 fed_eraudi_yardY.odf
+fed_mckinley_yard.odf 0
+
+
+////////Units////////
+
+//Risner = Y
+//Mayson = Z
+
+fed_mediterraneanY.odf 0
+fed_mediterraneanZ.odf 0
+fed_mandril.odf 0
+fed_venture.odf 0
+fed_newtonY.odf 1 fed_sf_engineeringY.odf
+fed_newtonZ.odf 1 fed_sf_engineeringZ.odf
+fed_saberY.odf 0
+fed_saberZ.odf 0
+fed_monsoonY.odf 1 fedU_chassis1Y.odf
+fed_monsoonZ.odf 1 fedU_chassis1.odf
+fed_intrepidY.odf 1 fedU_chassis1Y.odf
+fed_intrepidZ.odf 1 fedU_chassis1.odf
+fed_canaveralY.odf 2 fedU_chassis1Y.odf fed_sf_scienceY.odf
+fed_canaveralZ.odf 2 fedU_chassis1.odf fed_sf_scienceZ.odf
+fed_akiraY.odf 1 fedU_chassis2Y.odf
+fed_akiraZ.odf 1 fedU_chassis2.odf
+fed_nova.odf 1 fedU_chassis1.odf
+fed_mirandaii.odf 1 fedU_chassis3.odf
+
+fed_avalon.odf 0
+fed_remoore_bor.odf 2 all_technology_bor.odf fedU_chassis2.odf
+fed_remoore_borYT.odf 2 all_technology_bor.odf fedU_chassis2Y.odf
+fed_remoore_borR.odf 1 all_technology_bor.odf
+fed_akira_dom.odf 2 all_technology_dom.odf fedU_chassis2.odf
+fed_akira_domYT.odf 2 all_technology_dom.odf fedU_chassis2Y.odf
+fed_akira_domR.odf 1 all_technology_dom.odf
+fed_monsoon_kli.odf 2 all_technology_kli.odf fedU_chassis1.odf
+fed_monsoon_kliYT.odf 2 all_technology_kli.odf fedU_chassis1Y.odf
+fed_monsoon_kliR.odf 1 all_technology_kli.odf
+fed_defiant_rom.odf 2 all_technology_rom.odf fedU_chassis3.odf
+fed_defiant_romYT.odf 2 all_technology_rom.odf fedU_chassis3Y.odf
+fed_defiant_romR.odf 1 all_technology_rom.odf
+
+fed_excelsioriiY.odf 1 fedU_chassis1Y.odf
+fed_excelsioriiZ.odf 1 fedU_chassis1.odf
+fed_remooreY.odf 2 fedU_chassis2Y.odf fed_sf_scienceY.odf
+fed_remoore.odf 2 fedU_chassis2.odf fed_sf_scienceZ.odf
+fed_defiantY.odf 1 fedU_chassis3Y.odf
+fed_defiant.odf 1 fedU_chassis3.odf
+fed_sovereignY.odf 1 fedU_chassis3Y.odf
+fed_sovereign.odf 1 fedU_chassis3.odf
+fed_phalanx.odf 1 fedU_chassis3Y.odf
+
+//Currently Unused
+fed_nebulaA.odf 0
+fed_nebula_torpA.odf 0
+fed_nebula_engA.odf 0
+fed_teutoburgA.odf 0
+fed_steamrunnerA.odf 0
+fed_ambassadorA.odf 0
+fed_galaxyA.odf 0
+fed_descentA.odf 0
+fed_excelsiorA.odf 0
+fed_centaurA.odf 0
+fed_rhodeislandA.odf 0
+fed_premonition.odf 0
+fed_prometheus.odf 0
+fed_prometheus_sep.odf 0
+fed_prometheus_int.odf 0
+
+
+////////Research////////
+
+fedU_chassis1Y.odf 0
+fedU_chassis2Y.odf 1 fedU_chassis1Y.odf
+fedU_chassis3Y.odf 1 fedU_chassis2Y.odf
+fedU_chassis1.odf 0
+fedU_chassis2.odf 1 fedU_chassis1.odf
+fedU_chassis3.odf 1 fedU_chassis2.odf
+fedU_weapons1.odf 0
+fedU_weapons2.odf 1 fedU_weapons1.odf
+fedU_shields1.odf 0
+fedU_shields2.odf 1 fedU_shields1.odf
+fedU_sensors1.odf 0
+fedU_sensors2.odf 1 fedU_sensors1.odf
+
+passive_upgrade_fed_W1.odf 1 fedU_weapons1.odf
+passive_upgrade_fed_W2.odf 1 fedU_weapons2.odf
+passive_upgrade_fed_D1.odf 1 fedU_shields1.odf
+passive_upgrade_fed_D2.odf 1 fedU_shields2.odf
+passive_upgrade_fed_S1.odf 1 fedU_sensors1.odf
+passive_upgrade_fed_S2.odf 1 fedU_sensors2.odf
+
+fedR_progscan.odf 0
+fedR_impulse.odf 0
+fedR_proximity.odf 0
+fedR_tricobalt.odf 0
+fedR_defpatterns.odf 0
+fedR_canaveral1.odf 0
+fedR_canaveral2.odf 1 fedR_canaveral1.odf
+fedR_plasmacoil.odf 0
+fedR_nova1.odf 0
+fedR_nova2.odf 1 fedR_nova1.odf
+fedR_blockadebr.odf 0
+fedR_guidedquantums.odf 0
+fedR_remoore1.odf 0
+fedR_remoore2.odf 1 fedR_remoore1.odf
+fedR_critical.odf 0
+fedR_distortion.odf 0
+fedR_adv_magnan.odf 0
+
+
+////////Special Abilities////////
+fed_warpinY.odf 2 fed_effectsS.odf fedU_chassis1Y.odf
+fed_warpin.odf 2 fed_effectsS.odf fedU_chassis1.odf
+fed_warpin_specialY.odf 2 fed_effectsS.odf fedU_chassis3Y.odf
+fed_warpin_special.odf 2 fed_effectsS.odf fedU_chassis3.odf
+fed_warpin_stratY.odf 2 fed_effectsS.odf fedU_chassis2Y.odf
+fed_warpin_strat.odf 2 fed_effectsS.odf fedU_chassis2.odf
+
+fedS_progscan.odf 1 fedR_progscan.odf
+fedS_progscanA.odf 0
+fedS_progscanB.odf 0
+fedS_progscanC.odf 0
+fed_newtonUR.odf 0
+fed_newtonUUR.odf 0
+fed_newtonUUUR.odf 0
+fed_repair_beam.odf 0
+fed_repair_beamU.odf 0
+
+fedS_impulse.odf 1 fedR_impulse.odf
+fedS_impulseA.odf 0
+fedS_proximity.odf 1 fedR_proximity.odf
+fedS_tricobalt.odf 1 fedR_tricobalt.odf
+fedS_defense_patterns.odf 1 fedR_defpatterns.odf
+fedS_defense_patternsA.odf 0
+fedS_excessive.odf 0
+fedS_sensorsynergyR.odf 0
+fedS_sensorsynergyRA.odf 0
+fedS_sensorsynergy.odf 0
+fedS_sensorsynergyr4.odf 0
+fedS_sensorsynergyr5.odf 0
+fedS_plasmabolt.odf 1 fedR_nova1.odf
+fedS_plasmaboltr4.odf 1 fedR_nova1.odf
+fedS_plasmaboltr5.odf 1 fedR_nova1.odf
+fed_fleetsupply.odf 1 fedR_nova2.odf
+fedS_ecccm.odf 1 fedR_canaveral1.odf
+fedS_ecccmA.odf 0
+fedS_blackout.odf 1 fedR_canaveral2.odf
+fedS_blackoutr4.odf 1 fedR_canaveral2.odf
+fedS_blackoutr5.odf 1 fedR_canaveral2.odf
+fedS_blackoutM.odf 1 fedR_canaveral2.odf
+fedS_blackoutMr4.odf 1 fedR_canaveral2.odf
+fedS_blackoutMr5.odf 1 fedR_canaveral2.odf
+fed_myotronscan.odf 0
+fedS_stratsensor.odf 0
+fedS_stratsensorA.odf 0
+fedS_plasmacoil.odf 1 fedR_plasmacoil.odf
+fedS_blockadebreaker.odf 1 fedR_blockadebr.odf
+fedS_blockadebreakerA.odf 0
+fedS_nanites_remore.odf 0
+
+fedS_guidedquantums.odf 1 fedR_guidedquantums.odf
+fedS_guidedquantumsA.odf 0
+fedS_guidedquantumsB.odf 0
+fed_acs_torpedo.odf 0
+fedS_precise.odf 0
+fedS_antimattermine.odf 1 fedR_remoore1.odf
+fedS_pointdefense.odf 1 fedR_remoore2.odf
+fedS_pointdefenser6.odf 1 fedR_remoore2.odf
+fedS_pointdefenseY.odf 1 fedR_remoore2.odf
+fedS_pointdefenseYr6.odf 1 fedR_remoore2.odf
+fed_avalonFR.odf 0
+fed_outpostFR6.odf 0
+fed_outpostFR14.odf 0
+fed_fleetsupplyhq.odf 0
+fedS_critical.odf 1 fedR_critical.odf
+fedS_criticalr4.odf 1 fedR_critical.odf
+fedS_criticalr5.odf 1 fedR_critical.odf
+fedS_distortion.odf 1 fedR_distortion.odf
+fedS_advmagnan.odf 1 fedR_adv_magnan.odf
+fedS_advmagnanA.odf 0
+
+fedS_defensefocus.odf 0
+fedS_defensefocusA.odf 0
+fedS_type3torpedoes.odf 0
+fedS_type3torpedoesA.odf 0
+fedS_fullscan.odf 0
+fedS_fullscanA.odf 0
+fed_warpin_nebula.odf 1 fed_effectsS.odf
+fed_torpmodule.odf 0
+fed_torpmoduleA.odf 0
+fed_torpmoduleB.odf 0
+fed_torpmoduleC.odf 0
+fedS_precise_nebula.odf 0
+fed_platform_replicator.odf 0
+fed_platform_replicatorr6.odf 0
+fed_fleetsupplyRh.odf 0
+fed_fleetsupplyRhr6.odf 0
+fed_remoteshields.odf 0
+fedS_shieldreset.odf 0
+fedS_shieldresetB.odf 0
+fed_shieldovercharge.odf 0
+fedS_tricharger.odf 0
+fedS_trichargerA.odf 0
+
+//Currently Unused
+fed_surgical.odf 0
+fed_tricobaltvolley.odf 0
+fed_tricobaltvolleyr6.odf 0
+fed_probe.odf 0
+fed_vectorcalc.odf 0
+fed_temp_stasis.odf 0
+
+
+//Klingon
+
+////////Structure
+kli_kahless_stationY.odf 0
+kli_kahless_stationYA.odf 0
+kli_kahless_stationZ.odf 0
+kli_kahless_stationZA.odf 0
+kli_mining_station.odf 0
+kli_mining_stationZ.odf 0
+kli_field_yardY.odf 0
+kli_field_yardP1Y.odf 0
+kli_field_yardP2Y.odf 0
+kli_field_yardP3Y.odf 0
+kli_field_yardZ.odf 0
+kli_field_yardP1Z.odf 0
+kli_field_yardP2Z.odf 0
+kli_field_yardP3Z.odf 0
+kli_field_researchY.odf 0
+kli_field_researchZ.odf 0
+kli_mixedtech_yard_bor.odf 2 kli_field_yardY.odf kli_armoryY.odf
+kli_mixedtech_yard_borA.odf 2 kli_field_yardZ.odf kli_armoryZ.odf
+kli_battle_yardY.odf 1 kli_field_yardY.odf
+kli_battle_yardZ.odf 1 kli_field_yardZ.odf
+kli_armoryY.odf 1 kli_field_researchY.odf
+kli_armoryZ.odf 1 kli_field_researchZ.odf
+kli_imperial_yardY.odf 1 kli_battle_yardY.odf
+kli_imperial_yardZ.odf 1 kli_battle_yardZ.odf
+kli_ordnance_depotY.odf 1 kli_armoryY.odf
+kli_ordnance_depotZ.odf 1 kli_armoryZ.odf
+kli_imperial_researchY.odf 1 kli_imperial_yardY.odf
+kli_imperial_researchZ.odf 1 kli_imperial_yardZ.odf
+kli_moqbara_stationY.odf 2 kli_imperial_yardY.odf all_WIP
+kli_moqbara_stationZ.odf 2 kli_imperial_yardZ.odf all_WIP
+kli_platformY.odf 1 kli_armoryY.odf
+kli_platformZ.odf 1 kli_armoryZ.odf
+kli_scout_stationY.odf 0
+kli_scout_stationZ.odf 0
+
+
+//Upgrades
+
+kli_kahless_upgradeIY.odf 1 kli_armoryY.odf
+kli_kahless_upgradeIZ.odf 1 kli_armoryZ.odf
+kli_kahless_upgradeWY.odf 1 kli_armoryY.odf
+kli_kahless_upgradeWZ.odf 1 kli_armoryZ.odf
+kli_kahless_upgrade3Y.odf 1 kli_ordnance_depotY.odf
+kli_kahless_upgrade3Z.odf 1 kli_ordnance_depotZ.odf
+
+
+////////Unit////////
+
+kli_chorY.odf 0
+kli_chorYS.odf 0
+kli_chorZ.odf 0
+kli_chorZS.odf 0
+kli_topmey.odf 0
+kli_topmeyZ.odf 0
+kli_ktinga.odf 0
+kli_ktingaZ.odf 0
+kli_noqduj.odf 0
+kli_qawdujSYT.odf 1 kli_field_researchY.odf
+kli_qawdujS.odf 1 kli_field_researchZ.odf
+
+kli_kbeajq.odf 0
+kli_kbeajqZ.odf 0
+kli_brel.odf 0
+kli_brelZ.odf 0
+kli_kvortY.odf 1 kli_field_researchY.odf
+kli_kvortZ.odf 1 kli_field_researchZ.odf
+kli_susa.odf 1 kli_field_researchY.odf
+kli_veqlaragh.odf 1 kli_field_researchZ.odf
+
+kli_chargh.odf 1 kli_field_researchZ.odf
+kli_sang.odf 1 kli_field_researchY.odf
+kli_sangZ.odf 1 kli_field_researchZ.odf
+kli_qawdujYT.odf 1 kli_field_researchY.odf
+kli_qawduj.odf 1 kli_field_researchZ.odf
+kli_vorchaY.odf 1 kli_armoryY.odf
+kli_vorchaZ.odf 1 kli_armoryZ.odf
+kli_vutpaY.odf 1 kli_ordnance_depotY.odf
+kli_vutpaZ.odf 1 kli_ordnance_depotZ.odf
+kli_luspet.odf 1 kli_ordnance_depotY.odf
+
+kli_edjen.odf 0
+kli_qawduj_bor.odf 2 all_technology_bor.odf kli_field_researchZ.odf
+kli_qawduj_borYT.odf 2 all_technology_bor.odf kli_field_researchY.odf
+kli_qawduj_borR.odf 1 all_technology_bor.odf
+kli_chonaq_dom.odf 2 all_technology_dom.odf kli_armoryZ.odf
+kli_chonaq_domYT.odf 2 all_technology_dom.odf kli_armoryY.odf
+kli_chonaq_domR.odf 1 all_technology_dom.odf
+kli_kvort_fed.odf 2 all_technology_fed.odf kli_field_researchZ.odf
+kli_kvort_fedYT.odf 2 all_technology_fed.odf kli_field_researchY.odf
+kli_kvort_fedR.odf 1 all_technology_fed.odf
+kli_tricobalt.odf 0
+kli_brel_rom.odf 1 all_technology_rom.odf
+kli_brel_romR.odf 1 all_technology_rom.odf
+kli_cloak_rom.odf 0
+
+kli_chonaqY.odf 1 kli_armoryY.odf
+kli_chonaq.odf 1 kli_armoryZ.odf
+kli_bortasY.odf 0
+kli_bortasZ.odf 0
+kli_neghvarY.odf 1 kli_ordnance_depotY.odf
+kli_neghvarZ.odf 1 kli_ordnance_depotZ.odf
+
+
+////////Research////////
+
+kliU_weapons1.odf 0
+kliU_weapons2.odf 1 kliU_weapons1.odf
+kliU_shields1.odf 0
+kliU_shields2.odf 1 kliU_shields1.odf
+kliU_engines1.odf 0
+kliU_engines2.odf 1 kliU_engines1.odf
+
+passive_upgrade_kli_W1.odf 1 kliU_weapons1.odf
+passive_upgrade_kli_W2.odf 1 kliU_weapons2.odf
+passive_upgrade_kli_D1.odf 1 kliU_shields1.odf
+passive_upgrade_kli_D2.odf 1 kliU_shields2.odf
+passive_upgrade_kli_E1.odf 1 kliU_engines1.odf
+passive_upgrade_kli_E2.odf 1 kliU_engines2.odf
+
+
+kliR_torpedo_drone.odf 0
+kliR_heavy_disruptor.odf 0
+kliR_fatigue.odf 0
+kliR_sbtorp.odf 0
+kliR_lastditch.odf 0
+kliR_alt_armament.odf 0
+
+kliR_disrupt.odf 0
+kliR_compound.odf 0
+kliR_qawduj1.odf 0
+kliR_qawduj2.odf 1 kliR_qawduj1.odf
+kliR_polaron.odf 0
+kliR_missilestorm.odf 0
+kliR_fieldoffire.odf 0
+
+kliR_energybuffer.odf 0
+kliR_bortas1.odf 0
+kliR_bortas2.odf 1 kliR_bortas1.odf
+kliR_overload.odf 0
+kliR_largescalecloak.odf 0
+
+
+////////Special Abilities////////
+
+kli_dispatch.odf 0
+kli_dispatchA.odf 0
+
+kli_homing.odf 1 kliR_torpedo_drone.odf
+kli_heavy_disruptor.odf 1 kliR_heavy_disruptor.odf
+kli_fatigue.odf 1 kliR_fatigue.odf
+kli_fatigueA.odf 0
+kli_sb_torpedo.odf 1 kliR_sbtorp.odf
+kli_lastditch.odf 1 kliR_lastditch.odf
+kli_lastditchA.odf 0
+kli_lastditchB.odf 0
+kli_alt_armament.odf 1 kliR_alt_armament.odf
+kli_alt_armamentA.odf 0
+
+kli_disrupt.odf 1 kliR_disrupt.odf
+kli_compound.odf 1 kliR_compound.odf
+kli_imperial_stance.odf 0
+kli_imperial_stanceA.odf 0
+kli_gravseekmissile.odf 1 kliR_qawduj1.odf
+kli_polaronfield.odf 1 kliR_qawduj2.odf
+kli_polaron.odf 1 kliR_polaron.odf
+kli_missilestorm.odf 1 kliR_missilestorm.odf
+kli_vutpaRR.odf 0
+kli_fieldoffire.odf 1 kliR_fieldoffire.odf
+kli_fieldoffirer2.odf 1 kliR_fieldoffire.odf
+kli_fieldoffirer3.odf 1 kliR_fieldoffire.odf
+kli_fieldoffirer4.odf 1 kliR_fieldoffire.odf
+kli_fieldoffirer5.odf 1 kliR_fieldoffire.odf
+kli_fieldoffirer6.odf 1 kliR_fieldoffire.odf
+
+kli_scramblingprobe.odf 0
+
+kli_energybuffer.odf 1 kliR_energybuffer.odf
+kli_energybufferA.odf 0
+kli_combat_tractor.odf 0
+kli_attackprobe.odf 1 kliR_bortas1.odf
+kli_attackprober4.odf 1 kliR_bortas1.odf
+kli_attackprober5.odf 1 kliR_bortas1.odf
+kli_ion_storm.odf 1 kliR_bortas2.odf
+kli_ion_stormr4.odf 1 kliR_bortas2.odf
+kli_ion_stormr5.odf 1 kliR_bortas2.odf
+kli_ion_stormr6.odf 1 kliR_bortas2.odf
+kli_overload.odf 1 kliR_overload.odf
+
+kli_cloak.odf 0
+kli_cloak_ktinga.odf 0
+kli_cloak_bortas.odf 1 kliR_largescalecloak.odf
+kli_cloak_large.odf 1 kliR_largescalecloak.odf
+
+kli_battleplan.odf 1 kli_effectsS.odf
+
+//Currently Unused
+kli_graviton_marker.odf 0
+
+
+//Romulan
+
+////////Structures////////
+
+rom_starbaseY.odf 0
+rom_starbaseYA.odf 0
+rom_starbaseZ.odf 0
+rom_starbaseZA.odf 0
+rom_mining_colony.odf 0
+rom_staryardY.odf 0
+rom_staryardZ.odf 0
+rom_warbird_yardY.odf 1 rom_staryardY.odf
+rom_warbird_yardZ.odf 1 rom_staryardZ.odf
+rom_research_instituteY.odf 0
+rom_research_instituteZ.odf 0
+rom_mixedtech_yard_bor.odf 1 rom_research_instituteY.odf
+rom_mixedtech_yard_borA.odf 1 rom_research_instituteZ.odf
+rom_talshiar_academyY.odf 1 rom_research_instituteY.odf
+rom_talshiar_academyZ.odf 1 rom_research_instituteZ.odf
+rom_upgrade_facilityY.odf 1 rom_research_instituteY.odf
+rom_upgrade_facilityZ.odf 1 rom_research_instituteZ.odf
+rom_cloaking_generator.odf 0
+rom_intelligen_centerY.odf 1 rom_talshiar_academyY.odf
+rom_intelligen_centerZ.odf 1 rom_talshiar_academyZ.odf
+rom_singularitytrans.odf 1 rom_staryardY.odf
+rom_singularitytransZ.odf 1 rom_staryardZ.odf
+rom_disruptor_turret.odf 0
+rom_disruptor_turretM.odf 0
+rom_disruptor_turretZ.odf 0
+rom_disruptor_turretZM 0
+rom_spy_satellite.odf 0
+
+//Upgrades
+
+rom_starbase_upgradePY.odf 1 rom_research_instituteY.odf
+rom_starbase_upgradePZ.odf 0
+rom_starbase_upgradeCY.odf 1 rom_research_instituteY.odf
+rom_starbase_upgradeCZ.odf 0
+rom_starbase_upgradeSY.odf 1 rom_upgrade_facilityY.odf
+rom_starbase_upgradeSZ.odf 1 rom_research_instituteZ.odf
+rom_starbase_upgrade4Y.odf 2 rom_talshiar_academyY.odf rom_upgrade_facilityY.odf
+rom_starbase_upgrade4Z.odf 1 rom_upgrade_facilityZ.odf
+
+
+////////Units////////
+
+rom_mogaiY.odf 0
+rom_mogaiZ.odf 0
+rom_fakairu.odf 0
+rom_talon.odf 0
+rom_rhienn.odf 0
+rom_rhiennY.odf 0
+rom_rhienn_phaser.odf 1 rom_upgrade_facilityZ.odf
+rom_rhienn_phaserY.odf 1 rom_upgrade_facilityY.odf
+rom_rhienn_torpedo.odf 1 rom_upgrade_facilityZ.odf
+rom_rhienn_torpedoY.odf 1 rom_upgrade_facilityY.odf
+rom_generix.odf 0
+rom_generixY.odf 0
+rom_generix_spc.odf 1 rom_upgrade_facilityZ.odf
+rom_generix_spcY.odf 1 rom_upgrade_facilityY.odf
+rom_generix_sin.odf 1 rom_upgrade_facilityZ.odf
+rom_generix_sinY.odf 1 rom_upgrade_facilityY.odf
+rom_leahvalY.odf 1 rom_research_instituteY.odf
+rom_leahvalZ.odf 1 rom_research_instituteZ.odf
+rom_griffin.odf 1 rom_research_instituteY.odf
+rom_shrike.odf 0
+rom_saeihr.odf 1 rom_research_instituteZ.odf
+rom_serkasY.odf 1 rom_research_instituteY.odf
+rom_serkasZ.odf 1 rom_research_instituteZ.odf
+kli_qawduj_rom.odf 0
+rom_generix_sinYT.odf 0
+
+rom_rhiennT.odf 1 rom_supplydepotA.odf
+rom_rhiennYT.odf 1 rom_supplydepotA.odf
+rom_rhienn_phaserT.odf 2 rom_upgrade_facilityZ.odf rom_supplydepotA.odf
+rom_rhienn_phaserYT.odf 2 rom_upgrade_facilityY.odf rom_supplydepotA.odf
+rom_rhienn_torpedoT.odf 2 rom_upgrade_facilityZ.odf rom_supplydepotA.odf
+rom_rhienn_torpedoYT.odf 2 rom_upgrade_facilityY.odf rom_supplydepotA.odf
+rom_generixT.odf 1 rom_supplydepotA.odf
+rom_generixYT.odf 1 rom_supplydepotA.odf
+rom_generix_cenT.odf 2 rom_upgrade_facilityZ.odf rom_supplydepotA.odf
+rom_generix_cenYT.odf 2 rom_upgrade_facilityY.odf rom_supplydepotA.odf
+rom_generix_spcT.odf 2 rom_upgrade_facilityZ.odf rom_supplydepotA.odf
+rom_generix_spcYT.odf 2 rom_upgrade_facilityY.odf rom_supplydepotA.odf
+rom_griffinT.odf 2 rom_research_instituteY.odf rom_supplydepotA.odf
+rom_leahvalYT.odf 2 rom_research_instituteY.odf rom_supplydepotA.odf
+rom_leahvalZT.odf 2 rom_research_instituteZ.odf rom_supplydepotA.odf
+rom_shrikeT.odf 1 rom_supplydepotA.odf
+rom_serkasZT.odf 2 rom_research_instituteZ.odf rom_supplydepotA.odf
+rom_serkasYT.odf 2 rom_research_instituteY.odf rom_supplydepotA.odf
+rom_saeihrT.odf 2 rom_research_instituteZ.odf rom_supplydepotA.odf
+rom_generix_sinT.odf 1 rom_supplydepotA.odf
+rom_generix_sinYTT.odf 1 rom_supplydepotA.odf
+
+rom_dderidexY.odf 0
+rom_dderidexZ.odf 0
+rom_eresis.odf 0
+rom_cehlaer.odf 1 rom_research_instituteZ.odf
+rom_cehlaerYT.odf 1 rom_research_instituteY.odf
+rom_norexanY.odf 1 rom_talshiar_academyY.odf
+rom_norexanZ.odf 1 rom_talshiar_academyZ.odf
+rom_tavaraY.odf 1 rom_talshiar_academyY.odf
+rom_tavaraZ.odf 1 rom_talshiar_academyZ.odf
+
+rom_dderidexYT.odf 1 rom_supplydepotA.odf
+rom_dderidexZT.odf 1 rom_supplydepotA.odf
+rom_eresisT.odf 1 rom_supplydepotA.odf
+rom_cehlaerT.odf 2 rom_research_instituteZ.odf rom_supplydepotA.odf
+rom_cehlaerYTT.odf 2 rom_research_instituteY.odf rom_supplydepotA.odf
+rom_norexanYT.odf 2 rom_talshiar_academyY.odf rom_supplydepotA.odf
+rom_norexanZT.odf 2 rom_talshiar_academyZ.odf rom_supplydepotA.odf
+rom_tavaraYT.odf 2 rom_talshiar_academyY.odf rom_supplydepotA.odf
+rom_tavaraZT.odf 2 rom_talshiar_academyZ.odf rom_supplydepotA.odf
+
+rom_rhienn_bor.odf 1 all_technology_bor.odf
+rom_rhienn_borYT.odf 1 all_technology_bor.odf
+rom_rhienn_borR 1 all_technology_bor.odf
+rom_serkas_dom.odf 2 rom_research_instituteZ.odf all_technology_dom.odf
+rom_serkas_domYT.odf 2 rom_research_instituteY.odf all_technology_dom.odf
+rom_serkas_domR.odf 1 all_technology_dom.odf
+rom_leahval_fed.odf 2 rom_research_instituteZ.odf all_technology_fed.odf
+rom_leahval_fedYT.odf 2 rom_research_instituteY.odf all_technology_fed.odf
+rom_leahval_fedR.odf 1 all_technology_fed.odf
+rom_generix_sinM.odf 3 all_WIP.odf rom_upgrade_facilityZ.odf all_technology_kli.odf
+rom_generix_cen_kliYT.odf 3 all_WIP.odf rom_upgrade_facilityY.odf all_technology_kli.odf
+rom_generix_cen_kliR.odf 2 all_WIP.odf all_technology_kli.odf
+
+rom_rhienn_borTT.odf 2 all_technology_bor.odf rom_supplydepotA.odf
+rom_rhienn_borYTT.odf 2 all_technology_bor.odf rom_supplydepotA.odf
+rom_serkas_domTT.odf 3 rom_talshiar_academyZ.odf all_technology_dom.odf rom_supplydepotA.odf
+rom_serkas_domYTT.odf 3 rom_talshiar_academyY.odf all_technology_dom.odf rom_supplydepotA.odf
+rom_leahval_fedTT.odf 3 rom_research_instituteZ.odf all_technology_fed.odf rom_supplydepotA.odf
+rom_leahval_fedYTT.odf 3 rom_research_instituteY.odf all_technology_fed.odf rom_supplydepotA.odf
+rom_generix_cen_kliTT.odf 4 all_WIP.odf rom_upgrade_facilityZ.odf all_technology_kli.odf rom_supplydepotA.odf
+rom_generix_cen_kliYTT.odf 4 all_WIP.odf rom_upgrade_facilityY.odf all_technology_kli.odf rom_supplydepotA.odf
+
+
+//Currently Unused
+rom_delevhas.odf 0
+
+////////Research////////
+
+rom_cloakfield_cloak.odf 0
+rom_cloakfield.odf 0
+
+romU_weapons1.odf 0
+romU_weapons2.odf 1 romU_weapons1.odf
+romU_shields1.odf 0
+romU_shields2.odf 1 romU_shields1.odf
+romU_sensors1.odf 0
+romU_sensors2.odf 1 romU_sensors1.odf
+
+passive_upgrade_rom_W1.odf 1 romU_weapons1.odf
+passive_upgrade_rom_W2.odf 1 romU_weapons2.odf
+passive_upgrade_rom_D1.odf 1 romU_shields1.odf
+passive_upgrade_rom_D2.odf 1 romU_shields2.odf
+passive_upgrade_rom_T1.odf 1 romU_sensors1.odf
+passive_upgrade_rom_T2.odf 1 romU_sensors2.odf
+
+romR_singularityimp.odf 0
+romR_turretmode.odf 0
+romR_prefine.odf 0
+
+romR_phaseplates.odf 0
+romR_multi_targeting.odf 0
+romR_vector.odf 0
+romR_arlterium.odf 0
+romR_generix_refits.odf 0
+romR_refractive.odf 0
+romR_plasmamine.odf 0
+//romR_harmonicimpl.odf 0
+romR_leahval1.odf 0
+romR_leahval2.odf 1 romR_leahval1.odf
+romR_sensor_jammer.odf 0
+romR_unstable.odf 0
+romR_silentresolve.odf 0
+romR_concave.odf 0
+
+romR_radiation.odf 0
+romR_bombardment.odf 0
+romR_stealth.odf 0
+romR_multipurpose.odf 0
+
+//Currently Unused
+romR_refit_rhiennA.odf 0
+romR_refit_rhiennB.odf 0
+romR_generix_spc.odf 0
+romR_generix_sin.odf 0
+romR_marines.odf 0
+
+
+////////Special Abilities////////
+
+rom_starbasefield.odf 0
+rom_transmitterfield.odf 0
+rom_generixfield.odf 0
+rom_harmonicfield.odf 0
+rom_bastionfield.odf 0
+rom_singularityimp.odf 1 romR_singularityimp.odf
+rom_singularityimpA.odf 0
+rom_turretmode.odf 0
+rom_turretmodeA.odf 0
+rom_sleeperagent.odf 1 rom_effectsS.odf
+rom_sabotage.odf 1 rom_effectsS.odf
+rom_sabotager2.odf 1 rom_effectsS.odf
+rom_sabotager3.odf 1 rom_effectsS.odf
+rom_sabotager4.odf 1 rom_effectsS.odf
+rom_sabotager5.odf 1 rom_effectsS.odf
+rom_spy.odf 1 rom_effectsS.odf
+rom_spyr5.odf 1 rom_effectsS.odf
+rom_cloak_station.odf 1 rom_cloakenable.odf
+rom_cloak_civ.odf 1 rom_cloakenable.odf
+rom_cloak_station2.odf 0
+rom_cloak_station3.odf 1 rom_cloakenable.odf
+
+rom_talon_detect.odf 0
+rom_talon_detectR.odf 0
+
+rom_phaseplates.odf 1 romR_phaseplates.odf
+rom_phaseplatesA.odf 0
+rom_aldovh_cloak.odf 0
+rom_rhienn_phaserYR.odf 1 rom_upgrade_facilityY.odf
+rom_rhienn_phaserR.odf 1 rom_upgrade_facilityZ.odf
+rom_rhienn_torpedoYR.odf 1 rom_upgrade_facilityY.odf
+rom_rhienn_torpedoR.odf 1 rom_upgrade_facilityZ.odf
+rom_multi_targeting.odf 1 romR_multi_targeting.odf
+rom_vector.odf 1 romR_vector.odf
+rom_arlterium.odf 1 romR_arlterium.odf
+rom_arlteriumr4.odf 1 romR_arlterium.odf
+rom_arlteriumr5.odf 1 romR_arlterium.odf
+rom_arlteriumr6.odf 1 romR_arlterium.odf
+rom_generix_spcYR.odf 1 rom_research_instituteY.odf
+rom_generix_spcR.odf 1 rom_research_instituteZ.odf
+rom_generix_cenYR.odf 1 rom_upgrade_facilityY.odf
+rom_generix_cenR.odf 1 rom_upgrade_facilityZ.odf
+rom_refractive.odf 1 romR_refractive.odf
+rom_refractiver6.odf 1 romR_refractive.odf
+rom_refractiveA.odf 0
+rom_plasmamine.odf 1 romR_plasmamine.odf
+rom_harmonicimpl.odf 0
+rom_harmonicimplA.odf 0
+rom_metaphasic.odf 0
+rom_metaphasicM.odf 0
+rom_auto_repair.odf 1 romR_leahval1.odf
+rom_auto_repairM.odf 1 romR_leahval1.odf
+rom_energy_reeling.odf 1 romR_leahval2.odf
+rom_energy_reelingA.odf 0
+rom_sensorjammer.odf 1 romR_sensor_jammer.odf
+rom_sensorjammerr4.odf 1 romR_sensor_jammer.odf
+rom_sensorjammerr5.odf 1 romR_sensor_jammer.odf
+rom_unstable.odf 1 romR_unstable.odf
+rom_silentresolve.odf 1 romR_silentresolve.odf
+rom_silentresolver6.odf 1 romR_silentresolve.odf
+rom_tricobalt.odf 0
+rom_concave.odf 1 romR_concave.odf
+rom_concaver6.odf 1 romR_concave.odf
+rom_concaveA.odf 0
+
+rom_radiation.odf 1 romR_radiation.odf
+rom_radiationr4.odf 1 romR_radiation.odf
+rom_radiationr5.odf 1 romR_radiation.odf
+rom_bombardment.odf 1 romR_bombardment.odf
+//rom_stealth_field.odf 1 all_WIP.odf
+rom_multipurpose.odf 1 romR_multipurpose.odf
+rom_multipurposer4.odf 1 romR_multipurpose.odf
+rom_multipurposer5.odf 1 romR_multipurpose.odf
+rom_multipurposeA.odf 0
+rom_covert-ops.odf 0
+rom_tavara_upgradeWY.odf 1 rom_upgrade_facilityY.odf
+rom_tavara_upgradeWZ.odf 1 rom_upgrade_facilityZ.odf
+rom_tavara_upgradeDY.odf 1 rom_upgrade_facilityY.odf
+rom_tavara_upgradeDZ.odf 1 rom_upgrade_facilityZ.odf
+rom_tavara_upgradeCY.odf 1 rom_upgrade_facilityY.odf
+rom_tavara_upgradeCZ.odf 1 rom_upgrade_facilityZ.odf
+
+rom_cloak.odf 0
+rom_cloak_generix.odf 0
+rom_cloak_tavara.odf 0
+rom_cloak_leahvalM.odf 0
+rom_cloak_supreme.odf 0
+rom_detection.odf 0
+rom_supplydepot.odf 0
+
+//Currently Unused
+rom_combatprobe.odf 0
+rom_testship.odf 0
+rom_plasmabolt.odf 0
+rom_plasmaboltr4.odf 0
+rom_plasmaboltr5.odf 0
+rom_plasmaboltr6.odf 0
+rom_plasmaminer4.odf 0
+rom_plasmaminer5.odf 0
+rom_plasmaminer6.odf 0
+rom_shield_recharge.odf 0
+rom_talshiar_agent.odf 0
+
+fedS_cloak.odf 0
+all_mixed_tech.odf 0
+fed_excelsiorii_rom.odf 1 all_mixed_tech.odf
+fed_canaveral_rom.odf 1 all_mixed_tech.odf
+fed_vector.odf 0
+fed_probe_rom.odf 0
+fed_mixedtech_yard_kli.odf 0 //Dominion Puretech Large Yard Level 2
+fed_mixedtech_yard_kliA.odf 0 //Dominion Breen Large Yard Level 2
+fedS_proximity_kli.odf 1 fedR_proximity.odf
+fed_combat_tractor.odf 0
+fed_newton_kli.odf 1 all_mixed_tech.odf
+fed_mixedtech_yard_dom.odf 0
+//fed_mixedtech_yard_domA.odf 0
+fed_mandril_dom.odf 1 all_mixed_tech.odf
+fed_monsoon_bor.odf 1 all_mixed_tech.odf
+fed_gravitonloaded.odf 0
+rom_mixedtech_yard_fed.odf 0
+rom_mixedtech_yard_fedA.odf 0
+rom_talon_repair_fed.odf 1 all_mixed_tech.odf
+rom_critical.odf 0
+rom_mixedtech_yard_kli.odf 0
+rom_mixedtech_yard_kliA.odf 0
+rom_rhienn_phaser_kli.odf 1 all_technology_kli.odf
+rom_graviton_marker.odf 0
+rom_mixedtech_yard_dom.odf 0
+//rom_mixedtech_yard_domA.odf 0
+rom_rhienn_torpedo_dom.odf 1 all_mixed_tech.odf
+rom_leahval_dom.odf 1 all_mixed_tech.odf
+rom_cascade.odf 1 romR_leahval2.odf
+rom_rhienn_phaser_bor.odf 0
+rom_rhienn_phaser_borR.odf 1 romR_refit_rhiennA.odf
+rom_rhienn_torpedo_bor.odf 0
+rom_rhienn_torpedo_borR.odf 1 romR_refit_rhiennB.odf
+rom_transwarp.odf 0
+rom_leahval_bor.odf 1 all_mixed_tech.odf
+kli_mixedtech_yard_fed.odf 0
+kli_mixedtech_yard_fedA.odf 0
+kli_vorcha_fed.odf 1 all_technology_fed.odf
+kli_mixedtech_yard_rom.odf 0
+kli_mixedtech_yard_romA.odf 0
+kli_polaronfield_rom.odf 1 kliR_qawduj2.odf
+kli_sang_rom.odf 1 all_mixed_tech.odf
+kli_compound_rom.odf 1 kliR_compound.odf
+kli_mixedtech_yard_dom.odf 0
+kli_mixedtech_yard_domA.odf 0
+kli_noqduj_dom.odf 1 all_mixed_tech.odf
+kli_vutpa_dom.odf 1 all_mixed_tech.odf
+kli_brel_bor.odf 1 all_mixed_tech.odf
+kli_regeneration.odf 0
+kli_sang_bor.odf 1 all_mixed_tech.odf
+npc_tractorbeam.odf 0
+nfer_marauder.odf 0
+nfer_disblast.odf 0
+nbre_battleship.odf 1 nbre_battleshipP.odf
+nbre_battleshipP.odf 0
+nbre_cruiser.odf 1 nbre_cruiserP.odf
+nbre_cruiserP.odf 0
+nbreR_cloak.odf 0
+nbre_cloak.odf 1 nbreR_cloak.odf
+nbreR_dampening.odf 0
+nbreS_dampening.odf 1 nbreR_dampening.odf

@@ -1,0 +1,52 @@
+	// Map Definitions
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1569
+	Handle trigger_1569
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1568
+	Handle trigger_1568
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1567
+	Handle trigger_1567
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1566
+	Handle trigger_1566
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1565
+	Handle trigger_1565
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1564
+	Handle trigger_1564
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1563
+	Handle trigger_1563
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1562
+	Handle trigger_1562
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1569 = GetHandle( "trigger_1569" );
+	trigger_1568 = GetHandle( "trigger_1568" );
+	trigger_1567 = GetHandle( "trigger_1567" );
+	trigger_1566 = GetHandle( "trigger_1566" );
+	trigger_1565 = GetHandle( "trigger_1565" );
+	trigger_1564 = GetHandle( "trigger_1564" );
+	trigger_1563 = GetHandle( "trigger_1563" );
+	trigger_1562 = GetHandle( "trigger_1562" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (1 points)
+	// Path: "Camera_2" (1 points)

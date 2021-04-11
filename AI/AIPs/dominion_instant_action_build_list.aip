@@ -1,0 +1,168 @@
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 0;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+	//Startup
+	"dom_worker_ship_bZ",			 3,0, -1,  1,
+	"dom_space_refineryZ",			 1,1, -1,  0,
+	"dom_space_refineryZ",			 1,2, -1,  0,
+	"rom_mixedtech_yard_domA",		 1,0, -1,  0,
+	"dom_worker_ship_mZ",			 2,0, -1,  0,
+//	"dom_ketracel_synthZ",			 1,3, -1,  0,
+	"dom_destroyer",				 1,0, 2,  -1,
+	"dom_space_refineryZ",			 1,3, -1,  0,
+	"dom_worker_ship_mZ",			 3,0, -1,  0,
+	"dom_destroyer",				 2,0, -1,  0,
+
+	//Techphase 1
+	"rom_mixedtech_yard_domA",		 1,3, -1,  0,
+	"dom_destroyer",				 2,0, 2,  -1,
+	"dom_phaser_sentryZ",			 1,1, -1,  0,
+	"dom_phaser_sentryZ",			 1,2, -1,  0,
+	"dom_phaser_sentryZ",			 1,3, -1,  0,
+	"dom_phaser_sentryZ",			 1,4, -1,  0,
+	"dom_bomberZ",					 2,0, 3,  -2,
+	"dom_scout",					 1,0, -1,  0,
+
+	//Military Phase 1
+	"dom_technology_labZ",			 1,0, -1,  2,
+	"dom_bomberZ",					 2,0, 3,  -2,
+	"dom_escort_cruiserZ",			 2,0, -1,  -2,
+	"domR_tetphoton",				 1,0, -1,  0,
+	"dom_bomberZ",					 4,0, 1,  -2,
+	"dom_escort_cruiserZ",			 4,0, 1,  -2,
+	"domR_emblast",					 1,0, -1,  0,
+	"dom_bomberZ",					 2,0, -1,  -2,
+	"dom_escort_cruiserZ",			 2,0, -1,  -2,
+
+	//Techphase 2
+	"dom_worker_ship_bZ",			 1,0, 1,  0,
+	"domR_interception1",			 1,0, -1,  0,
+	
+	//Military Phase 2
+	"dom_destroyer",				 2,0, 1,  0,
+	"dom_warfrigateZ",				 4,0, -1,  0,
+	"dom_intercept_dest",			 2,0, -1,  0,
+	"domR_interception2",			 1,0, -1,  0,
+	"dom_warfrigateZ",				 2,0, 2,  -2,
+	"dom_intercept_dest",			 2,0, -1,  -2,
+	"domR_isbomb",					 1,0, -1,  0,
+
+	"fed_mixedtech_yard_domA",		 2,0, -1,  3,
+	"dom_ketracel_facZ",			 1,0, -1,  0,
+	"dom_heavy_cruiser",			 2,0, -1,  0,
+	"dom_heavy_cruiser",			 1,0, -1,  0,
+	"domU_weapons1Z",				 1,0, -1,  0,
+	"domR_excessive",				 1,0, -1,  0,
+	"nbre_cruiserD",				 2,0, -1,  0,
+	"dom_battleshipZ",				 4,0, -1,  0,
+
+	"domR_cloak",					 1,0, -1,  0,
+	"nbre_cruiserD",				 2,0, -1,  0,
+	"domU_shields1Z",				 1,0, -1,  0,
+	"fed_mixedtech_yard_domA",		 1,2, -1,  0,
+
+	//Expansion 1
+	"dom_space_refineryZ",			 1,5, -1,  0,
+	"dom_phaser_sentryZ",			 1,5, -1,  0,
+	"dom_perimeterZ",				 1,5, -1,  0,
+	"dom_space_refineryZ",			 1,6, -1,  0,
+	"domR_siege1",					 1,0, -1,  0,
+	"domU_engines1",				 1,0, -1,  0,
+
+	//Military Phase 3a
+	"dom_siege_cruiserZ",			 2,0, -1,  0,
+	"dom_battle_cruiserZ",			 2,0, -1,  0,
+	"domR_biowarheads",				 1,0, -1,  0,
+	"dom_siege_cruiserZ",			 2,0, -1,  0,
+	"dom_battle_cruiserZ",			 2,0, -1,  0,
+	"domR_siege2",					 1,0, -1,  0,
+	"dom_battleshipZ",				 2,0, -1,  0,
+	"domU_weapons2Z",			 	 1,0, -1,  0,
+	"dom_mixedtech_yard_borA",		 1,0, -1,  0,
+	"all_technology_bor.odf",		 1,0, -1,  0,
+	"nbre_battleshipD",				 3,0, -1,  0,
+	"dom_dreadnought_bor",			 1,0, -1,  0,
+
+	//Techphase 3
+	"fed_mixedtech_yard_domA",		 1,2, -1,  0,
+	"dom_escort_cruiser_bor",		 1,0, -1,  0,
+	"domR_dampening",				 1,0, -1,  0,
+	"domU_shields2Z",				 1,0, -1,  0,
+	"dom_perimeterZ",				 1,6, -1,  0,
+	"dom_defenderr5",				 2,0, -1,  0,
+	"dom_escort_cruiser_bor",		 1,0, -1,  0,
+
+	//Military Phase 3b
+	"dom_battleshipZ",				 3,0, -1,  0,
+	"dom_defenderr5",				 2,0, -1,  0,
+	"dom_heavy_cruiser",			 3,0, -1,  0,
+	"dom_siege_cruiserZ",			 2,0, -1,  0,
+
+	//Expansion 2
+	"dom_space_refineryZ",			 1,7, -1,  0,
+	"dom_phaser_sentryZ",			 3,7, -1,  0,
+	"fed_mixedtech_yard_domA",		 1,7, -1,  0,
+	"dom_ketracel_synthZ",			 1,8, -1,  0,
+	"dom_phaser_sentryZ",			 3,8, -1,  0,
+
+	//Techphase 4
+
+	//Military Phase 4
+	"dom_battleshipZ",				 4,0, -1,  0,
+	"dom_heavy_cruiser",			 6,0, -1,  0,
+	"dom_siege_cruiserZ",			 2,0, -1,  0,
+	"nbre_battleshipD",				 3,0, -1,  0,
+	"nbre_cruiserD",				 1,0, -1,  0,
+	"dom_intercept_dest",			 1,0, -1,  0,
+	"dom_escort_cruiserZ",			 4,0, -1,  0,
+	"dom_bomberZ",					 4,0, -1,  0,
+	"dom_destroyer",				 4,0, -1,  0,
+	"dom_defenderr5",				 6,0, -1,  0,
+	
+	//Techphase 5
+	"domU_engines2",				 1,0, -1,  0,
+
+	//Expansion 3
+	"dom_space_refineryZ",			 1,9, -1,  0,
+	"rom_mixedtech_yard_domA",		 1,9, -1,  0,
+	"dom_worker_ship_mZ",			 4,0, -1,  0,
+	"dom_phaser_sentryZ",			 4,9, -1,  0,
+	"fed_mixedtech_yard_domA",		 1,9, -1,  0,
+	"dom_space_refineryZ",			 1,10, -1,  0,
+	"dom_phaser_sentryZ",			 4,10, -1,  0,
+
+	//Final Military Phase 1
+	"dom_battleshipZ",				 9,0, -1,  0,
+	"dom_heavy_cruiser",			 1,0, -1,  0,
+	"dom_siege_cruiserZ",			 3,0, -1,  0,
+	"nbre_battleshipD",				 6,0, -1,  0,
+	"nbre_cruiserD",				 1,0, -1,  0,
+	"dom_destroyer",				 1,0, -1,  0,
+
+	//Final Military Phase 2
+	"dom_battleshipZ",				 9,0, -1,  0,
+	"dom_heavy_cruiser",			 1,0, -1,  0,
+	"dom_siege_cruiserZ",			 3,0, -1,  0,
+	"nbre_battleshipD",				 6,0, -1,  0,
+	"nbre_cruiserD",				 1,0, -1,  0,
+	"dom_destroyer",				 1,0, -1,  0,
+
+	//Final Military Phase 3
+	"dom_battleshipZ",				 9,0, -1,  0,
+	"dom_heavy_cruiser",			 1,0, -1,  0,
+	"dom_siege_cruiserZ",			 3,0, -1,  0,
+	"nbre_battleshipD",				 6,0, -1,  0,
+	"nbre_cruiserD",				 1,0, -1,  0,
+	"dom_destroyer",				 1,0, -1,  0,
+
+	//Final Military Phase 4
+	"dom_battleshipZ",				 9,0, -1,  0,
+	"dom_heavy_cruiser",			 1,0, -1,  0,
+	"dom_siege_cruiserZ",			 3,0, -1,  0,
+	"nbre_battleshipD",				 6,0, -1,  0,
+	"nbre_cruiserD",				 1,0, -1,  0,
+	"dom_destroyer",				 1,0, -1,  0,
+}; 

@@ -1,0 +1,234 @@
+	// Map Definitions
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1200
+	Handle trigger_1200
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1199
+	Handle trigger_1199
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1198
+	Handle trigger_1198
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1197
+	Handle trigger_1197
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1196
+	Handle trigger_1196
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1195
+	Handle trigger_1195
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1193
+	Handle trigger_1193
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1192
+	Handle trigger_1192
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1191
+	Handle trigger_1191
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1190
+	Handle trigger_1190
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1189
+	Handle trigger_1189
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1188
+	Handle trigger_1188
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1187
+	Handle trigger_1187
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1186
+	Handle trigger_1186
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1185
+	Handle trigger_1185
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1184
+	Handle trigger_1184
+
+	// Handle for Starbase (rom_starbase) object rom_star1183
+	Handle rom_star1183
+
+	// Handle for Starbase (rom_starbase) object rom_star1182
+	Handle rom_star1182
+
+	// Handle for Starbase (rom_starbase) object rom_star1181
+	Handle rom_star1181
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1179
+	Handle trigger_1179
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1178
+	Handle trigger_1178
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1177
+	Handle trigger_1177
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1176
+	Handle trigger_1176
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1175
+	Handle trigger_1175
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1174
+	Handle trigger_1174
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1173
+	Handle trigger_1173
+
+	// Handle for Starbase (rom_starbase) object rom_star1023
+	Handle rom_star1023
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1017
+	Handle trigger_1017
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1016
+	Handle trigger_1016
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1015
+	Handle trigger_1015
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1014
+	Handle trigger_1014
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1013
+	Handle trigger_1013
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1012
+	Handle trigger_1012
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1011
+	Handle trigger_1011
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1010
+	Handle trigger_1010
+
+	// Handle for Starbase (rom_starbase) object rom_star1009
+	Handle rom_star1009
+
+	// Handle for Starbase (rom_starbase) object rom_star1008
+	Handle rom_star1008
+
+	// Handle for Starbase (rom_starbase) object rom_star1007
+	Handle rom_star1007
+
+	// Handle for Starbase (rom_starbase) object rom_star1006
+	Handle rom_star1006
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1026
+	Handle trigger_1026
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1027
+	Handle trigger_1027
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1028
+	Handle trigger_1028
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1029
+	Handle trigger_1029
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1030
+	Handle trigger_1030
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1031
+	Handle trigger_1031
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1108
+	Handle trigger_1108
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1109
+	Handle trigger_1109
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1110
+	Handle trigger_1110
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1111
+	Handle trigger_1111
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1116
+	Handle trigger_1116
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1117
+	Handle trigger_1117
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1118
+	Handle trigger_1118
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1200 = GetHandle( "trigger_1200" );
+	trigger_1199 = GetHandle( "trigger_1199" );
+	trigger_1198 = GetHandle( "trigger_1198" );
+	trigger_1197 = GetHandle( "trigger_1197" );
+	trigger_1196 = GetHandle( "trigger_1196" );
+	trigger_1195 = GetHandle( "trigger_1195" );
+	trigger_1193 = GetHandle( "trigger_1193" );
+	trigger_1192 = GetHandle( "trigger_1192" );
+	trigger_1191 = GetHandle( "trigger_1191" );
+	trigger_1190 = GetHandle( "trigger_1190" );
+	trigger_1189 = GetHandle( "trigger_1189" );
+	trigger_1188 = GetHandle( "trigger_1188" );
+	trigger_1187 = GetHandle( "trigger_1187" );
+	trigger_1186 = GetHandle( "trigger_1186" );
+	trigger_1185 = GetHandle( "trigger_1185" );
+	trigger_1184 = GetHandle( "trigger_1184" );
+	rom_star1183 = GetHandle( "rom_star1183" );
+	rom_star1182 = GetHandle( "rom_star1182" );
+	rom_star1181 = GetHandle( "rom_star1181" );
+	trigger_1179 = GetHandle( "trigger_1179" );
+	trigger_1178 = GetHandle( "trigger_1178" );
+	trigger_1177 = GetHandle( "trigger_1177" );
+	trigger_1176 = GetHandle( "trigger_1176" );
+	trigger_1175 = GetHandle( "trigger_1175" );
+	trigger_1174 = GetHandle( "trigger_1174" );
+	trigger_1173 = GetHandle( "trigger_1173" );
+	rom_star1023 = GetHandle( "rom_star1023" );
+	trigger_1017 = GetHandle( "trigger_1017" );
+	trigger_1016 = GetHandle( "trigger_1016" );
+	trigger_1015 = GetHandle( "trigger_1015" );
+	trigger_1014 = GetHandle( "trigger_1014" );
+	trigger_1013 = GetHandle( "trigger_1013" );
+	trigger_1012 = GetHandle( "trigger_1012" );
+	trigger_1011 = GetHandle( "trigger_1011" );
+	trigger_1010 = GetHandle( "trigger_1010" );
+	rom_star1009 = GetHandle( "rom_star1009" );
+	rom_star1008 = GetHandle( "rom_star1008" );
+	rom_star1007 = GetHandle( "rom_star1007" );
+	rom_star1006 = GetHandle( "rom_star1006" );
+	trigger_1026 = GetHandle( "trigger_1026" );
+	trigger_1027 = GetHandle( "trigger_1027" );
+	trigger_1028 = GetHandle( "trigger_1028" );
+	trigger_1029 = GetHandle( "trigger_1029" );
+	trigger_1030 = GetHandle( "trigger_1030" );
+	trigger_1031 = GetHandle( "trigger_1031" );
+	trigger_1108 = GetHandle( "trigger_1108" );
+	trigger_1109 = GetHandle( "trigger_1109" );
+	trigger_1110 = GetHandle( "trigger_1110" );
+	trigger_1111 = GetHandle( "trigger_1111" );
+	trigger_1116 = GetHandle( "trigger_1116" );
+	trigger_1117 = GetHandle( "trigger_1117" );
+	trigger_1118 = GetHandle( "trigger_1118" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (1 points)
+	// Path: "Camera_3" (2 points)
+	// Path: "Camera_4" (1 points)
+	// Path: "Camera_5" (2 points)
+	// Path: "Camera_6" (1 points)
+	// Path: "Camera_7" (2 points)
+	// Path: "Camera_8" (1 points)

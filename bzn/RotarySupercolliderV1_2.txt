@@ -1,0 +1,126 @@
+	// Map Definitions
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1911
+	Handle trigger_1911
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1910
+	Handle trigger_1910
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1909
+	Handle trigger_1909
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1908
+	Handle trigger_1908
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1907
+	Handle trigger_1907
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1906
+	Handle trigger_1906
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1897
+	Handle trigger_1897
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1896
+	Handle trigger_1896
+
+	// Handle for Starbase (rom_starbase) object rom_star1893
+	Handle rom_star1893
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1725
+	Handle zferscav1725
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1833
+	Handle trigger_1833
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1834
+	Handle trigger_1834
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1835
+	Handle trigger_1835
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1836
+	Handle trigger_1836
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1845
+	Handle trigger_1845
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1848
+	Handle trigger_1848
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1849
+	Handle trigger_1849
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1850
+	Handle trigger_1850
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1851
+	Handle trigger_1851
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1856
+	Handle trigger_1856
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1858
+	Handle trigger_1858
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1859
+	Handle trigger_1859
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1860
+	Handle trigger_1860
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1863
+	Handle trigger_1863
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1864
+	Handle trigger_1864
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1865
+	Handle trigger_1865
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1911 = GetHandle( "trigger_1911" );
+	trigger_1910 = GetHandle( "trigger_1910" );
+	trigger_1909 = GetHandle( "trigger_1909" );
+	trigger_1908 = GetHandle( "trigger_1908" );
+	trigger_1907 = GetHandle( "trigger_1907" );
+	trigger_1906 = GetHandle( "trigger_1906" );
+	trigger_1897 = GetHandle( "trigger_1897" );
+	trigger_1896 = GetHandle( "trigger_1896" );
+	rom_star1893 = GetHandle( "rom_star1893" );
+	zferscav1725 = GetHandle( "zferscav1725" );
+	trigger_1833 = GetHandle( "trigger_1833" );
+	trigger_1834 = GetHandle( "trigger_1834" );
+	trigger_1835 = GetHandle( "trigger_1835" );
+	trigger_1836 = GetHandle( "trigger_1836" );
+	trigger_1845 = GetHandle( "trigger_1845" );
+	trigger_1848 = GetHandle( "trigger_1848" );
+	trigger_1849 = GetHandle( "trigger_1849" );
+	trigger_1850 = GetHandle( "trigger_1850" );
+	trigger_1851 = GetHandle( "trigger_1851" );
+	trigger_1856 = GetHandle( "trigger_1856" );
+	trigger_1858 = GetHandle( "trigger_1858" );
+	trigger_1859 = GetHandle( "trigger_1859" );
+	trigger_1860 = GetHandle( "trigger_1860" );
+	trigger_1863 = GetHandle( "trigger_1863" );
+	trigger_1864 = GetHandle( "trigger_1864" );
+	trigger_1865 = GetHandle( "trigger_1865" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (2 points)
+	// Path: "Camera_3" (2 points)
+	// Path: "Camera_4" (2 points)

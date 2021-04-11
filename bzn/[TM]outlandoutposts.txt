@@ -1,0 +1,56 @@
+	// Map Definitions
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1282
+	Handle trigger_1282
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1281
+	Handle trigger_1281
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1280
+	Handle trigger_1280
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1279
+	Handle trigger_1279
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1278
+	Handle trigger_1278
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1277
+	Handle trigger_1277
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_1276
+	Handle trigger_1276
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1275
+	Handle trigger_1275
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1001
+	Handle zferscav1001
+
+
+
+
+	// Map Object Initialization
+
+	trigger_1282 = GetHandle( "trigger_1282" );
+	trigger_1281 = GetHandle( "trigger_1281" );
+	trigger_1280 = GetHandle( "trigger_1280" );
+	trigger_1279 = GetHandle( "trigger_1279" );
+	trigger_1278 = GetHandle( "trigger_1278" );
+	trigger_1277 = GetHandle( "trigger_1277" );
+	trigger_1276 = GetHandle( "trigger_1276" );
+	trigger_1275 = GetHandle( "trigger_1275" );
+	zferscav1001 = GetHandle( "zferscav1001" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (1 points)
+	// Path: "Camera_2" (1 points)

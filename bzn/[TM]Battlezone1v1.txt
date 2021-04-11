@@ -1,0 +1,116 @@
+	// Map Definitions
+
+	// Handle for Wormhole (map_wormhole) object map_worm1998
+	Handle map_worm1998
+
+	// Handle for Wormhole (map_wormhole) object map_worm1997
+	Handle map_worm1997
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1415
+	Handle zferscav1415
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1414
+	Handle zferscav1414
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1413
+	Handle zferscav1413
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1412
+	Handle zferscav1412
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1411
+	Handle zferscav1411
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1410
+	Handle zferscav1410
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1409
+	Handle zferscav1409
+
+	// Handle for D'Kora Class Marauder (nfer_marauder) object zferscav1380
+	Handle zferscav1380
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_1999
+	Handle trigger_1999
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2000
+	Handle trigger_2000
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2001
+	Handle trigger_2001
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2002
+	Handle trigger_2002
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2003
+	Handle trigger_2003
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2004
+	Handle trigger_2004
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2005
+	Handle trigger_2005
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2006
+	Handle trigger_2006
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2007
+	Handle trigger_2007
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2008
+	Handle trigger_2008
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2009
+	Handle trigger_2009
+
+	// Handle for Latinum Moon (trigger_tritanium) object trigger_2010
+	Handle trigger_2010
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2011
+	Handle trigger_2011
+
+	// Handle for Dilithium Moon (trigger_dilithium) object trigger_2012
+	Handle trigger_2012
+
+
+
+
+	// Map Object Initialization
+
+	map_worm1998 = GetHandle( "map_worm1998" );
+	map_worm1997 = GetHandle( "map_worm1997" );
+	zferscav1415 = GetHandle( "zferscav1415" );
+	zferscav1414 = GetHandle( "zferscav1414" );
+	zferscav1413 = GetHandle( "zferscav1413" );
+	zferscav1412 = GetHandle( "zferscav1412" );
+	zferscav1411 = GetHandle( "zferscav1411" );
+	zferscav1410 = GetHandle( "zferscav1410" );
+	zferscav1409 = GetHandle( "zferscav1409" );
+	zferscav1380 = GetHandle( "zferscav1380" );
+	trigger_1999 = GetHandle( "trigger_1999" );
+	trigger_2000 = GetHandle( "trigger_2000" );
+	trigger_2001 = GetHandle( "trigger_2001" );
+	trigger_2002 = GetHandle( "trigger_2002" );
+	trigger_2003 = GetHandle( "trigger_2003" );
+	trigger_2004 = GetHandle( "trigger_2004" );
+	trigger_2005 = GetHandle( "trigger_2005" );
+	trigger_2006 = GetHandle( "trigger_2006" );
+	trigger_2007 = GetHandle( "trigger_2007" );
+	trigger_2008 = GetHandle( "trigger_2008" );
+	trigger_2009 = GetHandle( "trigger_2009" );
+	trigger_2010 = GetHandle( "trigger_2010" );
+	trigger_2011 = GetHandle( "trigger_2011" );
+	trigger_2012 = GetHandle( "trigger_2012" );
+
+
+
+	// AI special forces
+
+
+
+	//
+	// PATHS
+	//
+
+	// Path: "Camera_1" (2 points)
+	// Path: "Camera_2" (2 points)

@@ -1,0 +1,333 @@
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 0;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+
+	//Startup
+	"fed_mediterraneanZ",			 2,0, -1,  -4,
+	"fed_antares_yardZ",			 2,0, -1,  -4,
+	"fed_storage_dock",				 1,1, -1,  -4,
+	"fed_storage_dock",				 1,2, -1,  -4,
+	"fed_storage_dock",				 1,3, -1,  -4,
+	"fed_mandril",					 2,0, -1,  -4,
+	"fed_saberZ",					 1,0, -1,  -1,
+	"fed_mandril",					 2,0, -1,  -4,
+	"fed_saberZ",					 2,0, -1,  -1,
+
+	//Techphase 1
+	"fed_sf_engineeringZ",			 1,0, -1,  -4,
+	"fed_saberZ",					 2,0, -1,  -1,
+	"fedU_chassis1",				 1,0, -1,  -4,
+	"fed_antares_yardZ",			 1,2, -1,  -4,
+	"fed_platform_phaserZ",			 1,1, -1,  -4,
+	"fed_platform_phaserZ",			 1,3, -1,  -4,
+	"fed_newtonZ",			 		 1,0, -1,  -4,
+	"fed_mediterraneanZ",			 1,0, -1,  -4,
+	"fedU_shields1",				 1,0, -1,  -4,
+
+	//Military Phase 1
+	"fed_intrepidZ",				 2,0, -1,  -2,
+	"fed_monsoonZ",					 2,0, -1,  -2,
+	"fed_intrepidZ",				 2,0, -1,  -3,
+	"fed_monsoonZ",					 2,0, -1,  -3,
+	"fed_venture",					 1,0, -1,  -4,
+
+	//Techphase 2
+	"fed_sf_scienceZ",				 1,0, -1,  -2,
+	"fedU_chassis2",				 1,0, -1,  -4,
+	"fedR_nova1",					 1,0, -1,  -4,
+	"fed_sf_commandZ",				 1,0, -1,  -4,
+
+	//Military Phase 2
+	"fed_canaveralZ",				 2,0, -1,  -4,
+	"fedR_nova2",					 1,0, -1,  -4,
+	"fed_akiraZ",					 2,0, -1,  -4,
+	"fed_nova",						 2,0, -1,  -3,
+	"fed_akiraZ",					 2,0, -1,  -4,
+
+	//Expansion 1
+	"fedU_weapons1",				 1,0, -1,  -4,
+	"fed_newtonZ",			 		 1,0, -1,  -4,
+	"fedR_proximity",				 1,0, -1,  -4,
+	"fed_storage_dock",				 1,5, -1,  -4,
+	"fed_platform_torpedoZ",		 1,5, -1,  -4,
+	"fedR_tricobalt",				 1,0, -1,  -4,
+	"fed_mixedtech_yard_borA",		 2,0, -1,  -4,
+	"fed_avalon",					 2,0, -1,  -4,
+	"fed_newtonZ",			 		 1,0, -1,  -4,
+	"fed_eraudi_yardZ",				 2,4, -1,  -3,
+	"fed_excelsioriiZ",				 2,0, -1,  -4,
+	"fed_akiraZ",					 2,0, 1,  -4,
+	"fedR_defpatterns",				 1,0, -1,  -4,
+	"fed_excelsioriiZ",				 4,0, -1,  -3,
+	"fed_platform_torpedoZ",		 1,3, -1,  -4,
+	"fed_platform_phaserZ",			 1,4, -1,  -4,
+	"fed_remoore",					 2,0, -1,  -4,
+	"fed_avalon",					 2,0, -1,  -3,
+	"fed_remoore",					 2,0, -1,  -3,
+	"fedR_remoore1",				 1,0, -1,  -4,
+	"fed_defiant_rom",				 2,0, -1,  -4,
+	"fedR_guidedquantums",			 1,0, -1,  -4,
+
+	//Techphase 3
+	"fedU_chassis3",				 1,0, -1,  -4,
+	"fedU_shields2",				 1,0, -1,  -4,
+	"fedR_remoore2",				 1,0, -1,  -4,
+	"fed_canaveralZ",				 2,0, -1,  -4,
+	"fed_sovereign",				 2,0, -1,  -4,
+	"fed_eraudi_yardZ",				 1,0, -1,  -4,
+	"fed_eraudi_yardZ",				 1,2, -1,  -4,
+	"fedR_distortion",				 1,0, -1,  -4,
+	"fed_canaveralZ",				 2,0, -1,  -4,
+	"fedU_weapons2",				 1,0, -1,  -4,
+	"fed_defiant",					 2,0, -1,  -4,
+	"fedR_critical",				 1,0, -1,  -4,
+	"fed_phalanxr2",				 2,0, -1,  -4,
+	"fed_excelsioriiZ",				 2,0, -1,  -4,
+	"fed_sovereign",				 2,0, -1,  -4,
+	"fed_defiant",					 2,0, -1,  -4,
+	"fed_canaveralZ",				 2,0, -1,  -4,
+
+	//Military Phase 3
+	"fed_remoore",					 3,0, -1,  -4,
+	"fed_sovereign",				 3,0, -1,  -4,
+	"fed_phalanxr2",				 3,0, -1,  -4,
+	"fed_defiant",					 3,0, -1,  -4,
+	"fed_excelsioriiZ",				 3,0, -1,  -4,
+
+	//Expansion 2
+	"fed_storage_dock",				 1,7, -1,  -4,
+	"fed_mandril",					 4,0, -1,  -4,
+	"fed_outpostZ_DDWW",			 1,7, -1,  -4,
+	"fed_eraudi_yardZ",				 1,7, -1,  -4,
+	"fed_platform_torpedoZ",		 2,8, -1,  -4,
+	"fed_platform_phaserZ",			 2,8, -1,  -4,
+	"fed_storage_dock",				 1,8, -1,  -4,
+
+	//Techphase 4
+
+	//Military Phase 4
+	"fed_sovereign",				 4,0, -1,  -4,
+	"fed_canaveralZ",				 1,0, -1,  -4,
+	"fed_akiraZ",					 3,0, -1,  -4,
+	"fed_defiant",					 4,0, -1,  -4,
+	"fed_intrepidZ",				 2,0, -1,  -4,
+	"fed_excelsioriiZ",				 4,0, -1,  -4,
+	"fed_saberZ",					 2,0, -1,  -4,
+	"fed_monsoonZ",					 4,0, -1,  -4,
+	"fed_nova",						 4,0, -1,  -4,
+	"fed_remoore",					 1,0, -1,  -4,
+	"fed_phalanxr2",				 5,0, -1,  -4,
+	"fed_canaveralZ",				 4,0, -1,  -4,
+
+	//Techphase 5
+	"fedU_sensors1",				 1,0, -1,  -4,
+	"fedU_sensors2",				 1,0, -1,  -4,
+
+	//Final Military Phase 1
+	"fed_sovereign",				 7,0, -1,  -4,
+	"fed_defiant",					 7,0, -1,  -4,
+	"fed_canaveralZ",				 1,0, -1,  -4,
+	"fed_akiraZ",					 2,0, -1,  -4,
+	"fed_intrepidZ",				 1,0, -1,  -4,
+	"fed_excelsioriiZ",				 4,0, -1,  -4,
+	"fed_monsoonZ",					 1,0, -1,  -4,
+	"fed_nova",						 1,0, -1,  -4,
+	"fed_remoore",					 2,0, -1,  -4,
+	"fed_canaveralZ",				 2,0, -1,  -4,
+
+	//Final Military Phase 2
+	"fed_sovereign",				 7,0, -1,  -4,
+	"fed_defiant",					 7,0, -1,  -4,
+	"fed_canaveralZ",				 1,0, -1,  -4,
+	"fed_akiraZ",					 2,0, -1,  -4,
+	"fed_intrepidZ",				 1,0, -1,  -4,
+	"fed_excelsioriiZ",				 4,0, -1,  -4,
+	"fed_monsoonZ",					 1,0, -1,  -4,
+	"fed_nova",						 1,0, -1,  -4,
+	"fed_remoore",					 2,0, -1,  -4,
+	"fed_canaveralZ",				 2,0, -1,  -4,
+
+	
+	///// BEGIN AI 2 /////
+	
+	//Startup
+	"fed_mediterraneanZ",			 2,0, -1,  -8,
+	"fed_antares_yardZ",			 2,0, -1,  -8,
+	"fed_storage_dock",				 1,1, -1,  -8,
+	"fed_storage_dock",				 1,2, -1,  -8,
+	"fed_storage_dock",				 1,3, -1,  -8,
+	"fed_mandril",					 2,0, -1,  -8,
+	"fed_saberZ",					 1,0, -1,  -5,
+	"fed_mandril",					 2,0, -1,  -8,
+	"fed_saberZ",					 2,0, -1,  -5,
+
+	//Techphase 1
+	"fed_sf_engineeringZ",			 1,0, -1,  -8,
+	"fed_saberZ",					 2,0, -1,  -5,
+	"fedU_chassis1",				 1,0, -1,  -5,
+	"fed_antares_yardZ",			 1,2, -1,  -8,
+	"fed_platform_phaserZ",			 1,1, -1,  -8,
+	"fed_platform_phaserZ",			 1,3, -1,  -8,
+	"fed_newtonZ",			 		 1,0, -1,  -8,
+	"fed_mediterraneanZ",			 1,0, -1,  -8,
+	"fedU_shields1",				 1,0, -1,  -8,
+
+	//Military Phase 1
+	"fed_intrepidZ",				 2,0, -1,  -6,
+	"fed_monsoonZ",					 2,0, -1,  -6,
+	"fed_intrepidZ",				 2,0, -1,  -7,
+	"fed_monsoonZ",					 2,0, -1,  -7,
+	"fed_venture",					 1,0, -1,  -8,
+
+	//Techphase 2
+	"fed_sf_scienceZ",				 1,0, -1,  -8,
+	"fedU_chassis2",				 1,0, -1,  -8,
+	"fedR_nova1",					 1,0, -1,  -8,
+	"fed_sf_commandZ",				 1,0, -1,  -8,
+
+	//Military Phase 2
+	"fed_canaveralZ",				 2,0, -1,  -8,
+	"fedR_nova2",					 1,0, -1,  -8,
+	"fed_akiraZ",					 2,0, -1,  -8,
+	"fed_nova",						 2,0, -1,  -7,
+	"fed_akiraZ",					 2,0, -1,  -8,
+
+	//Expansion 1
+	"fedU_weapons1",				 1,0, -1,  -8,
+	"fed_newtonZ",			 		 1,0, -1,  -8,
+	"fedR_proximity",				 1,0, -1,  -8,
+	"fed_storage_dock",				 1,5, -1,  -8,
+	"fed_platform_torpedoZ",		 1,5, -1,  -8,
+	"fedR_tricobalt",				 1,0, -1,  -8,
+	"fed_mixedtech_yard_borA",		 2,0, -1,  -8,
+	"fed_avalon",					 2,0, -1,  -8,
+	"fed_newtonZ",			 		 1,0, -1,  -8,
+	"fed_eraudi_yardZ",				 2,4, -1,  -7,
+	"fed_excelsioriiZ",				 2,0, -1,  -8,
+	"fed_akiraZ",					 2,0, 1,  -8,
+	"fedR_defpatterns",				 1,0, -1,  -8,
+	"fed_excelsioriiZ",				 4,0, -1,  -7,
+	"fed_platform_torpedoZ",		 1,3, -1,  -8,
+	"fed_platform_phaserZ",			 1,4, -1,  -8,
+	"fed_remoore",					 2,0, -1,  -8,
+	"fed_avalon",					 2,0, -1,  -3,
+	"fed_remoore",					 2,0, -1,  -3,
+	"fedR_remoore1",				 1,0, -1,  -8,
+	"fed_defiant_rom",				 2,0, -1,  -8,
+	"fedR_guidedquantums",			 1,0, -1,  -8,
+
+	//Techphase 3
+	"fedU_chassis3",				 1,0, -1,  -8,
+	"fedU_shields2",				 1,0, -1,  -8,
+	"fedR_remoore2",				 1,0, -1,  -8,
+	"fed_canaveralZ",				 2,0, -1,  -8,
+	"fed_sovereign",				 2,0, -1,  -8,
+	"fed_eraudi_yardZ",				 1,0, -1,  -8,
+	"fed_eraudi_yardZ",				 1,2, -1,  -8,
+	"fedR_distortion",				 1,0, -1,  -8,
+	"fed_canaveralZ",				 2,0, -1,  -8,
+	"fedU_weapons2",				 1,0, -1,  -8,
+	"fed_defiant",					 2,0, -1,  -8,
+	"fedR_critical",				 1,0, -1,  -8,
+	"fed_phalanxr2",				 2,0, -1,  -8,
+	"fed_excelsioriiZ",				 2,0, -1,  -8,
+	"fed_sovereign",				 2,0, -1,  -8,
+	"fed_defiant",					 2,0, -1,  -8,
+	"fed_canaveralZ",				 2,0, -1,  -8,
+
+	//Military Phase 3
+	"fed_remoore",					 3,0, -1,  -8,
+	"fed_sovereign",				 3,0, -1,  -8,
+	"fed_phalanxr2",				 3,0, -1,  -8,
+	"fed_defiant",					 3,0, -1,  -8,
+	"fed_excelsioriiZ",				 3,0, -1,  -8,
+
+	//Expansion 2
+	"fed_storage_dock",				 1,7, -1,  -8,
+	"fed_mandril",					 4,0, -1,  -8,
+	"fed_outpostZ_DDWW",			 1,7, -1,  -8,
+	"fed_eraudi_yardZ",				 1,7, -1,  -8,
+	"fed_platform_torpedoZ",		 2,8, -1,  -8,
+	"fed_platform_phaserZ",			 2,8, -1,  -8,
+	"fed_storage_dock",				 1,8, -1,  -8,
+
+
+	//Military Phase 4
+	"fed_sovereign",				 4,0, -1,  -8,
+	"fed_canaveralZ",				 1,0, -1,  -8,
+	"fed_akiraZ",					 3,0, -1,  -8,
+	"fed_defiant",					 4,0, -1,  -8,
+	"fed_intrepidZ",				 2,0, -1,  -8,
+	"fed_excelsioriiZ",				 4,0, -1,  -8,
+	"fed_saberZ",					 2,0, -1,  -8,
+	"fed_monsoonZ",					 4,0, -1,  -8,
+	"fed_nova",						 4,0, -1,  -8,
+	"fed_remoore",					 1,0, -1,  -8,
+	"fed_phalanxr2",				 5,0, -1,  -8,
+	"fed_canaveralZ",				 4,0, -1,  -8,
+
+	//Techphase 5
+	"fedU_sensors1",				 1,0, -1,  -8,
+	"fedU_sensors2",				 1,0, -1,  -8,
+
+	//Final Military Phase 1
+	"fed_sovereign",				 7,0, -1,  -8,
+	"fed_defiant",					 7,0, -1,  -8,
+	"fed_canaveralZ",				 1,0, -1,  -8,
+	"fed_akiraZ",					 2,0, -1,  -8,
+	"fed_intrepidZ",				 1,0, -1,  -8,
+	"fed_excelsioriiZ",				 4,0, -1,  -8,
+	"fed_monsoonZ",					 1,0, -1,  -8,
+	"fed_nova",						 1,0, -1,  -8,
+	"fed_remoore",					 2,0, -1,  -8,
+	"fed_canaveralZ",				 2,0, -1,  -8,
+	
+	////BEGIN AI 3 /////
+	
+		//Startup
+	"fed_mediterraneanZ",			 2,0, -1,  -12,
+	"fed_antares_yardZ",			 2,0, -1,  -12,
+	"fed_storage_dock",				 1,1, -1,  -12,
+	"fed_storage_dock",				 1,2, -1,  -12,
+	"fed_storage_dock",				 1,3, -1,  -12,
+	"fed_mandril",					 2,0, -1,  -12,
+	"fed_saberZ",					 1,0, -1,  -12,
+	"fed_mandril",					 2,0, -1,  -12,
+	"fed_saberZ",					 2,0, -1,  -12,
+
+	////BEGIN AI 4 /////
+
+		//Startup
+	"fed_mediterraneanZ",			 2,0, -1,  -16,
+	"fed_antares_yardZ",			 2,0, -1,  -16,
+	"fed_storage_dock",				 1,1, -1,  -16,
+	"fed_storage_dock",				 1,2, -1,  -16,
+	"fed_storage_dock",				 1,3, -1,  -16,
+	"fed_mandril",					 2,0, -1,  -16,
+	"fed_saberZ",					 1,0, -1,  -16,
+	"fed_mandril",					 2,0, -1,  -16,
+	"fed_saberZ",					 2,0, -1,  -16,
+
+	////BEGIN AI 5 /////
+
+		//Startup
+	"fed_mediterraneanZ",			 2,0, -1,  -20,
+	"fed_antares_yardZ",			 2,0, -1,  -20,
+	"fed_storage_dock",				 1,1, -1,  -20,
+	"fed_storage_dock",				 1,2, -1,  -20,
+	"fed_storage_dock",				 1,3, -1,  -20,
+	"fed_mandril",					 2,0, -1,  -20,
+	"fed_saberZ",					 1,0, -1,  -20,
+	"fed_mandril",					 2,0, -1,  -20,
+	"fed_saberZ",					 2,0, -1,  -20,
+
+	"fedA_saber_start",				 1,0, -1,  1,
+	"fedA_2",						 1,0, -1,  5,
+	"fedA_3",						 1,0, -1,  9,
+	"fedA_4",						 1,0, -1,  13,
+	"fedA_5",						 1,0, -1,  17,
+}; 
+
